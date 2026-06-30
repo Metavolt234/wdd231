@@ -1,0 +1,272 @@
+/* ------------------------------
+   Global Styles
+--------------------------------*/
+
+:root {
+    --primary-color: #0d2b45;
+    --secondary-color: #e8e8e8;
+    --accent-color: #d97706;
+    --text-color: #222;
+    --completed-color: #2e7d32;
+    --card-radius: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Header
+--------------------------------*/
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: .75rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.logo-area span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo-area img {
+    width: 55px;
+}
+
+/* ------------------------------
+   Navigation
+--------------------------------*/
+
+#menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--primary-color);
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav li {
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,.2);
+}
+
+nav a.active {
+    background: var(--accent-color);
+}
+
+/* ------------------------------
+   Main
+--------------------------------*/
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   Cards
+--------------------------------*/
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    background: white;
+}
+
+.card h2 {
+    margin: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: .8rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.student-photo {
+    display: block;
+    width: 180px;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/* ------------------------------
+   Course Buttons
+--------------------------------*/
+
+.course-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .75rem;
+    padding: 1rem;
+}
+
+.course-buttons button {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    border: none;
+
+    padding: .8rem 1.4rem;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.course-buttons button:hover {
+
+    background: var(--accent-color);
+
+}
+
+/* ------------------------------
+   Course Cards
+--------------------------------*/
+
+#courseContainer {
+
+    display: grid;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+}
+
+.course-card {
+
+    background: #f4f4f4;
+
+    border-left: 6px solid #888;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+}
+
+.course-card.completed {
+
+    background: #d8f5dc;
+
+    border-left-color: var(--completed-color);
+
+    color: var(--completed-color);
+
+}
+
+/* ------------------------------
+   Credits
+--------------------------------*/
+
+#creditTotal {
+
+    text-align: center;
+
+    font-weight: bold;
+
+    padding: 1rem;
+
+}
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+
+footer {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 2rem 1rem;
+
+}
+
+.social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.social img {
+
+    width: 36px;
+
+    transition: .3s;
+
+}
+
+.social img:hover {
+
+    transform: scale(1.15);
+
+}
+
+footer p {
+
+    margin: .4rem;
+
+    font-size: .95rem;
+
+}
