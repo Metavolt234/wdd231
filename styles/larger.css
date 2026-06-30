@@ -7,34 +7,43 @@
 @media only screen and (min-width: 768px) {
 
     /* ---------- Header ---------- */
-
     header {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
+        background: #ffffff;
+        border-bottom: 1px solid #ccc;
     }
 
     .logo-area {
         justify-self: start;
     }
 
-    /* ---------- Navigation ---------- */
+    .logo-area span {
+        font-size: 1.8rem;
+    }
 
+    /* ---------- Hide Hamburger ---------- */
     #menuButton {
         display: none;
     }
 
+    /* ---------- Navigation ---------- */
     nav {
-        justify-self: end;
+        width: 100%;
     }
 
     nav ul {
         display: flex !important;
         flex-direction: row;
-        justify-content: flex-end;
-        gap: .5rem;
-        background: transparent;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .25rem;
+        margin: 0;
+        padding: .35rem;
+        background: #111;
+        list-style: none;
     }
 
     nav li {
@@ -42,29 +51,31 @@
     }
 
     nav a {
-        padding: .75rem 1.25rem;
-        border-radius: 6px;
+        display: block;
+        padding: .6rem 1rem;
+        background: #222;
+        color: white;
+        text-decoration: none;
+        border-radius: 0;
         transition: background-color .3s ease;
     }
 
     nav a:hover {
-        background-color: rgba(255,255,255,.15);
+        background: #444;
     }
 
     nav a.active {
-        background-color: var(--accent-color);
+        background: #555;
     }
 
     /* ---------- Main ---------- */
-
     main {
         max-width: 1200px;
         margin: auto;
         padding: 2rem;
     }
 
-    /* About Me / Student Photo */
-
+    /* ---------- About + Photo ---------- */
     .top-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -73,61 +84,40 @@
     }
 
     /* ---------- Student Photo ---------- */
-
     .student-photo {
         width: 220px;
         margin: 2rem auto;
     }
 
     /* ---------- Course Buttons ---------- */
-
     .course-buttons {
         justify-content: center;
     }
 
     /* ---------- Course Cards ---------- */
-
     #courseContainer {
-
         display: grid;
-
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-
         gap: 1rem;
-
     }
 
     .course-card {
-
         padding: 1.25rem;
-
         font-size: 1rem;
-
-        transition: transform .25s ease,
-                    box-shadow .25s ease;
-
+        transition: transform .25s ease, box-shadow .25s ease;
     }
 
     .course-card:hover {
-
         transform: translateY(-4px);
-
         box-shadow: 0 6px 15px rgba(0,0,0,.15);
-
     }
 
     /* ---------- Footer ---------- */
-
     footer {
-
         padding: 2rem;
-
     }
 
     .social {
-
         gap: 2rem;
-
     }
-
 }

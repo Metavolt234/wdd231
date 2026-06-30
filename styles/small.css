@@ -1,11 +1,10 @@
 /* ------------------------------
    Global Styles
 --------------------------------*/
-
 :root {
-    --primary-color: #0d2b45;
+    --primary-color: #111;
     --secondary-color: #e8e8e8;
-    --accent-color: #d97706;
+    --accent-color: #555;
     --text-color: #222;
     --completed-color: #2e7d32;
     --card-radius: 10px;
@@ -22,11 +21,10 @@ body {
 /* ------------------------------
    Header
 --------------------------------*/
-
 header {
-    background: var(--primary-color);
-    color: white;
-    padding: .75rem 1rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
 
     display: flex;
     justify-content: space-between;
@@ -40,8 +38,9 @@ header {
 }
 
 .logo-area span {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    color: #111;
 }
 
 .logo-area img {
@@ -51,18 +50,21 @@ header {
 /* ------------------------------
    Navigation
 --------------------------------*/
-
 #menuButton {
-    background: none;
-    border: none;
-    color: white;
+    background: #eee;
+    border: 1px solid #ccc;
+    color: black;
     font-size: 2rem;
+    padding: .3rem .8rem;
+    cursor: pointer;
 }
 
 nav ul {
     display: none;
     flex-direction: column;
-    background: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav ul.open {
@@ -70,18 +72,20 @@ nav ul.open {
 }
 
 nav li {
-    border-top: 1px solid rgba(255,255,255,.15);
+    border-bottom: 1px solid #333;
 }
 
 nav a {
+    background: #222;
     color: white;
     display: block;
     padding: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background: rgba(255,255,255,.2);
+    background: #444;
 }
 
 nav a.active {
@@ -91,7 +95,6 @@ nav a.active {
 /* ------------------------------
    Main
 --------------------------------*/
-
 main {
     padding: 1rem;
 }
@@ -103,7 +106,6 @@ h1 {
 /* ------------------------------
    Cards
 --------------------------------*/
-
 .card {
     border: 1px solid #ddd;
     border-radius: var(--card-radius);
@@ -114,7 +116,7 @@ h1 {
 
 .card h2 {
     margin: 0;
-    background: var(--primary-color);
+    background: #0d2b45;
     color: white;
     padding: .8rem;
     text-align: center;
@@ -135,7 +137,6 @@ h1 {
 /* ------------------------------
    Course Buttons
 --------------------------------*/
-
 .course-buttons {
     display: flex;
     justify-content: center;
@@ -145,128 +146,80 @@ h1 {
 }
 
 .course-buttons button {
-
-    background: var(--primary-color);
-
+    background: #0d2b45;
     color: white;
-
     border: none;
-
     padding: .8rem 1.4rem;
-
     border-radius: 6px;
-
     font-weight: bold;
-
     transition: .3s;
+    cursor: pointer;
 }
 
 .course-buttons button:hover {
-
-    background: var(--accent-color);
-
+    background: #d97706;
 }
 
 /* ------------------------------
    Course Cards
 --------------------------------*/
-
 #courseContainer {
-
     display: grid;
-
     gap: 1rem;
-
     padding: 1rem;
-
 }
 
 .course-card {
-
     background: #f4f4f4;
-
     border-left: 6px solid #888;
-
     padding: 1rem;
-
     text-align: center;
-
     font-weight: bold;
-
     border-radius: 6px;
-
 }
 
 .course-card.completed {
-
     background: #d8f5dc;
-
     border-left-color: var(--completed-color);
-
     color: var(--completed-color);
-
 }
 
 /* ------------------------------
    Credits
 --------------------------------*/
-
 #creditTotal {
-
     text-align: center;
-
     font-weight: bold;
-
     padding: 1rem;
-
 }
 
 /* ------------------------------
    Footer
 --------------------------------*/
-
 footer {
-
-    background: var(--primary-color);
-
+    background: #0d2b45;
     color: white;
-
     text-align: center;
-
     padding: 2rem 1rem;
-
 }
 
 .social {
-
     display: flex;
-
     justify-content: center;
-
     gap: 1rem;
-
     margin-bottom: 1rem;
-
 }
 
 .social img {
-
     width: 36px;
-
     transition: .3s;
-
 }
 
 .social img:hover {
-
     transform: scale(1.15);
-
 }
 
 footer p {
-
     margin: .4rem;
-
     font-size: .95rem;
-
 }
