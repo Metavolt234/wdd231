@@ -39,8 +39,8 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 10px;
-        margin: 15rem;
+        gap: .25rem;
+        margin: 0;
         padding: .35rem;
         background: #111;
         list-style: none;
