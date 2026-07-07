@@ -1,0 +1,132 @@
+@media screen and (min-width: 38rem) {
+
+/* =========================
+   HEADER - DESKTOP
+========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+/* Hide hamburger menu on desktop */
+#menu {
+    display: none;
+}
+
+/* =========================
+   NAVIGATION - DESKTOP
+========================= */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+}
+.navigation li {
+    border: none;
+}
+
+.navigation a {
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+
+}
+
+/* =========================
+   DIRECTORY GRID VIEW
+========================= */
+#members.grid {
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+}
+
+#members section {
+
+    min-height: 350px;
+
+}
+
+#members section:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+/* =========================
+   DIRECTORY LIST VIEW
+========================= */
+
+#members.list section {
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 1.5rem;
+
+}
+
+#members.list img {
+
+    display: block;
+
+}
+
+
+/* =========================
+   FOOTER DESKTOP
+========================= */
+
+footer {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: left;
+    padding: 2rem 4rem;
+
+}
+
+.footer-social {
+
+    justify-content: center;
+
+}
+
+}
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+
+@media screen and (min-width: 70rem) {
+
+
+    #members.grid {
+
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+
+}

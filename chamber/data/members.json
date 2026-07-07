@@ -1,0 +1,131 @@
+[
+    {
+        "name": "MetaVolt Tech Uganda",
+        "address": "Kampala, Uganda",
+        "phone": "+256 700 000000",
+        "website": "https://metavolt234.github.io",
+        "image": "metavolt.webp",
+        "membership": 3,
+        "description": "Web development, software solutions, graphic design, and technology services."
+    },
+
+    {
+        "name": "Cylo UG Graphics",
+        "address": "Nakulabye, Kampala",
+        "phone": "+256 784 243843",
+        "website": "https://example.com",
+        "image": "cylo.webp",
+        "membership": 2,
+        "description": "Professional graphic design, branding, printing, and marketing services."
+    },
+
+    {
+        "name": "Kampala Fresh Foods Ltd",
+        "address": "Kisenyi, Kampala",
+        "phone": "+256 701 111111",
+        "website": "https://example.com",
+        "image": "freshfoods.webp",
+        "membership": 1,
+        "description": "Supplier of fresh agricultural products, fruits, and food supplies."
+    },
+
+    {
+        "name": "Uganda Digital Solutions",
+        "address": "Ntinda, Kampala",
+        "phone": "+256 702 222222",
+        "website": "https://example.com",
+        "image": "digital.webp",
+        "membership": 3,
+        "description": "IT support, networking, cybersecurity, and digital transformation services."
+    },
+
+    {
+        "name": "Kampala Construction Group",
+        "address": "Industrial Area, Kampala",
+        "phone": "+256 703 333333",
+        "website": "https://example.com",
+        "image": "construction.webp",
+        "membership": 2,
+        "description": "Construction, engineering, and property development company."
+    },
+
+    {
+        "name": "Green Farm Uganda",
+        "address": "Wakiso District",
+        "phone": "+256 704 444444",
+        "website": "https://example.com",
+        "image": "greenfarm.webp",
+        "membership": 1,
+        "description": "Modern farming, agriculture training, and sustainable food production."
+    },
+
+    {
+        "name": "Pearl Business Consultants",
+        "address": "Bugolobi, Kampala",
+        "phone": "+256 705 555555",
+        "website": "https://example.com",
+        "image": "consultants.webp",
+        "membership": 3,
+        "description": "Business consulting, entrepreneurship support, and financial planning."
+    },
+
+    {
+        "name": "Kampala Logistics Uganda",
+        "address": "Bweyogerere, Kampala",
+        "phone": "+256 706 666666",
+        "website": "https://example.com",
+        "image": "logistics.webp",
+        "membership": 2,
+        "description": "Transportation, delivery, and supply chain management services."
+    },
+
+    {
+        "name": "Bright Future Academy",
+        "address": "Kawempe, Kampala",
+        "phone": "+256 707 777777",
+        "website": "https://example.com",
+        "image": "academy.webp",
+        "membership": 1,
+        "description": "Education services providing quality learning opportunities."
+    },
+
+    {
+        "name": "Royal Hotel Kampala",
+        "address": "Kampala Central",
+        "phone": "+256 708 888888",
+        "website": "https://example.com",
+        "image": "hotel.webp",
+        "membership": 3,
+        "description": "Hospitality services including accommodation and conference facilities."
+    },
+
+    {
+        "name": "Urban Fashion Uganda",
+        "address": "Owino Market, Kampala",
+        "phone": "+256 709 999999",
+        "website": "https://example.com",
+        "image": "fashion.webp",
+        "membership": 2,
+        "description": "Fashion design, clothing, and lifestyle products."
+    },
+
+    {
+        "name": "Eco Energy Solutions",
+        "address": "Muyenga, Kampala",
+        "phone": "+256 710 101010",
+        "website": "https://example.com",
+        "image": "energy.webp",
+        "membership": 3,
+        "description": "Renewable energy solutions including solar systems and installations."
+    },
+
+    {
+        "name": "Lake Victoria Traders",
+        "address": "Entebbe Road, Uganda",
+        "phone": "+256 711 121212",
+        "website": "https://example.com",
+        "image": "traders.webp",
+        "membership": 1,
+        "description": "Wholesale and retail trading of quality products."
+    }
+]
