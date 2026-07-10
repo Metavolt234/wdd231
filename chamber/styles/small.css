@@ -1,260 +1,390 @@
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
 :root {
-    --primary-color: #005f73;
-    --secondary-color: #0a9396;
-    --accent-color: #ee9b00;
-    --dark-color: #001219;
-    --light-color: #f8f9fa;
-    --white: #ffffff;
-    --border-color: #cccccc;
+    --primary: #2d2d2d;
+    --secondary: #f2f2f2;
+    --accent: #dcdcdc;
+    --text: #222;
+    --border: #cfcfcf;
+    --white: #fff;
+
+    --max-width: 1200px;
 }
 
-
-/* General Page Styling */
+/* ===========================
+   GENERAL
+=========================== */
 
 body {
-    background-color: var(--light-color);
-    color: var(--dark-color);
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: #fafafa;
 }
 
-
-/* Header */
-
-header {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 1rem;
-}
-
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-
-.logo img {
-    border-radius: 50%;
-}
-
-
-.logo h1 {
-    font-size: 1.5rem;
-}
-
-
-.logo p {
-    font-size: 1rem;
-}
-
-
-/* Navigation Button */
-
-#menu {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-}
-
-/* Navigation */
-
-#navMenu {
-    width: 100%;
-}
-
-.navigation {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: var(--primary-color);
-}
-
-.navigation.open {
-    display: flex;
-}
-
-.navigation li {
-    border-top: 1px solid rgba(255,255,255,.3);
-}
-
-.navigation a {
+img {
+    max-width: 100%;
     display: block;
-    padding: 1rem;
-    color: white;
 }
-
-.navigation a:hover,
-.navigation .active {
-    background: var(--accent-color);
-    color: black;
-}
-
-/* Main Content */
 
 main {
     padding: 1rem;
 }
 
-
-main h2 {
-    text-align: center;
-    margin: 1rem 0;
-    color: var(--primary-color);
+h2 {
+    margin: .5rem 0 1rem;
+    font-size: 2rem;
 }
 
+/* ===========================
+   HEADER
+=========================== */
 
-.intro {
-    text-align: center;
-    margin-bottom: 1rem;
-}
+header {
 
-
-/* Buttons */
-
-.view-buttons {
-    text-align: center;
-    margin: 1rem;
-}
-
-
-.view-buttons button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.7rem 1.2rem;
-    margin: 0.3rem;
-    border-radius: 5px;
-}
-
-
-.view-buttons button:hover {
-    background-color: var(--accent-color);
-    color: black;
-}
-
-
-/* Directory Grid */
-
-#members.grid {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-
-}
-
-
-#members.list {
-
-    display: block;
-
-}
-
-
-/* Business Cards */
-
-#members section {
-
-    background-color: white;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-
-}
-
-
-#members section img {
-
-    margin: auto;
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-
-}
-
-
-#members h3 {
-
-    color: var(--primary-color);
-    margin: 0.8rem;
-
-}
-
-
-#members a {
-
-    color: var(--secondary-color);
-    font-weight: bold;
-
-}
-
-
-/* List View */
-
-#members.list section {
-
-    display: block;
-    margin-bottom: 1rem;
-}
-
-
-#members.list img {
-
-    display: none;
-
-}
-
-
-/* Footer */
-
-footer {
-
-    background-color: var(--dark-color);
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-
-}
-
-
-.footer-contact,
-.footer-social,
-.footer-info {
-
-    margin-bottom: 1rem;
-
-}
-
-
-.footer-social {
+    background: var(--secondary);
 
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: .75rem 1rem;
+
+    border-bottom: 1px solid var(--border);
+
+    position: relative;
 
 }
 
+.logo {
 
-.footer-social img {
+    display: flex;
 
-    width: 32px;
-    height: 32px;
+    align-items: center;
+
+    gap: .6rem;
 
 }
 
+.logo h1{
 
-/* Mobile adjustments */
+    margin:0;
 
-@media screen and (max-width: 600px) {
+    font-size:1.1rem;
 
-    header {
-        position: relative;
-    }
+}
+
+.logo p{
+
+    margin:0;
+
+    font-size:.85rem;
+
+}
+
+/* ===========================
+   HAMBURGER
+=========================== */
+
+#menu{
+
+    font-size:2rem;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.navigation{
+
+    display:none;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+    background:#333;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+}
+
+.navigation.open{
+
+    display:block;
+
+}
+
+.navigation li{
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+}
+
+.navigation a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:1rem;
+
+}
+
+.navigation a:hover{
+
+    background:#555;
+
+}
+
+.navigation .active{
+
+    background:#666;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.view-buttons{
+
+    text-align:center;
+
+    margin:1rem 0 2rem;
+
+}
+
+.view-buttons button{
+
+    width:80px;
+
+    padding:.6rem;
+
+    margin:0 .3rem;
+
+    background:#ddd;
+
+    border:1px solid #999;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   GRID VIEW
+=========================== */
+
+#members.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:1rem;
+
+}
+
+#members.grid section{
+
+    background:#ececec;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    border:1px solid #ddd;
+
+}
+
+#members.grid h3{
+
+    text-align:center;
+
+    margin:0;
+
+    background:#ddd;
+
+    padding:.7rem;
+
+}
+
+#members.grid .tagline{
+
+    text-align:center;
+
+    font-size:.8rem;
+
+    margin-bottom:.5rem;
+
+}
+
+.card-content{
+
+    display:flex;
+
+    gap:1rem;
+
+    padding:1rem;
+
+}
+
+.card-content img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    border:1px solid #999;
+
+}
+
+.details{
+
+    flex:1;
+
+    font-size:.9rem;
+
+}
+
+.details p{
+
+    margin:.3rem 0;
+
+}
+
+.details a{
+
+    color:#004aad;
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+   LIST VIEW
+=========================== */
+
+#members.list{
+
+    display:block;
+
+}
+
+#members.list section{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    align-items:center;
+
+    padding:.9rem 1rem;
+
+    border-bottom:1px solid #ccc;
+
+}
+
+#members.list section:nth-child(even){
+
+    background:#d9d9d9;
+
+}
+
+#members.list img,
+
+#members.list .tagline,
+
+#members.list .details p{
+
+    display:none;
+
+}
+
+#members.list h3{
+
+    margin:0;
+
+    background:none;
+
+    padding:0;
+
+    font-size:1rem;
+
+}
+
+#members.list .details{
+
+    display:contents;
+
+}
+
+#members.list .details a{
+
+    justify-self:end;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#ececec;
+
+    margin-top:2rem;
+
+    padding:1.5rem;
+
+    text-align:center;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    margin:1rem 0;
+
+}
+.footer-social img{
+
+    width:40px;
+
+}
+/* ===========================
+   UTILITIES
+=========================== */
+.hidden{
+
+    display:none;
 
 }

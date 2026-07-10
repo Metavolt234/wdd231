@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kampala Chamber of Commerce | Business Directory</title>
+    <title>Kampala Chamber of Commerce | Directory</title>
 
-    <meta name="description" content="Explore businesses and organizations that are members of the Kampala Chamber of Commerce.">
+    <meta name="description"
+        content="Business Directory of the Kampala Chamber of Commerce. Find local businesses and organizations.">
+
     <meta name="author" content="Tumwesige Nelson">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="Kampala Chamber of Commerce">
-    <meta property="og:description" content="Business Directory for the Kampala Chamber of Commerce">
-    <meta property="og:image" content="images/chamber-banner.webp">
-    <meta property="og:url" content="https://metavolt234.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Business Directory for Kampala Chamber of Commerce">
+    <meta property="og:image"
+        content="https://metavolt234.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url"
+        content="https://metavolt234.github.io/wdd231/chamber/directory.html">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -27,6 +33,7 @@
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+
 </head>
 
 <body>
@@ -34,85 +41,163 @@
 <header>
 
     <div class="logo">
-        <img src="images/logo.png" alt="Kampala Chamber Logo" width="80" height="80">
+
+        <img src="images/logo.png"
+             alt="Kampala Chamber Logo"
+             width="55"
+             height="55">
+
         <div>
-            <h1>Kampala Chamber Of Commerce</h1>
+
+            <h1>Kampala Chamber</h1>
+
+            <p>of Commerce</p>
+
         </div>
+
     </div>
 
-    <button id="menu" aria-label="Open Navigation">&#9776;</button>
 
-    <nav id="navMenu">
+    <button id="menu" aria-label="Menu">
+
+        ☰
+
+    </button>
+
+
+    <nav>
+
         <ul class="navigation">
+
             <li><a href="../index.html">Home</a></li>
+
             <li><a class="active" href="directory.html">Directory</a></li>
+
             <li><a href="join.html">Join</a></li>
+
             <li><a href="discover.html">Discover</a></li>
+
         </ul>
+
     </nav>
 
 </header>
 
+
+
 <main>
 
-    <h2>Business Directory</h2>
+<h2>Directory</h2>
 
-    <p class="intro">
-        Browse businesses and organizations that are proud members of the Kampala Chamber of Commerce.
-    </p>
 
-    <div class="view-buttons">
-        <button id="grid">Grid View</button>
-        <button id="list">List View</button>
-    </div>
+<div class="view-buttons">
 
-    <section id="members" class="grid">
-        <!-- Cards are in JSON and called from JavaScript -->
-    </section>
+<button id="grid">
+
+Grid
+
+</button>
+
+
+<button id="list">
+
+List
+
+</button>
+
+</div>
+
+
+
+<section id="members" class="grid">
+
+<!-- JSON Data Loads Here -->
+
+</section>
+
 
 </main>
 
+
+
 <footer>
 
-    <section class="footer-contact">
+<div class="footer-left">
 
-        <h3>Kampala Chamber of Commerce</h3>
+<h3>Kampala Chamber of Commerce</h3>
 
-        <p>Marium Road</p>
+<p>Marium Road</p>
 
-        <p>Kampala, Uganda</p>
+<p>Kampala, Uganda</p>
 
-        <p>+256 767 465 876</p>
+<p>info@kampalachamber.org</p>
 
-        <p>info@kampalacchamber.org</p>
+<p>(+256) 767-465-876</p>
 
-    </section>
+</div>
 
-    <section class="footer-social">
 
-        <a href="#" aria-label="Facebook">
-            <img src="images/Facebook_logo.png" alt="Facebook" width="32" height="32">
-        </a>
 
-        <a href="#" aria-label="X">
-            <img src="images/xx.png" alt="X" width="32" height="32">
-        </a>
+<div class="footer-social">
 
-        <a href="#" aria-label="LinkedIn">
-            <img src="images/linkedin.jpg" alt="LinkedIn" width="32" height="32">
-        </a>
+<a href="#">
 
-    </section>
+<img src="images/Facebook_logo.png"
+alt="Facebook">
 
-    <section class="footer-info">
+</a>
 
-        <p>&copy; <span id="year"></span> Tumwesige Nelson| WDD 231</p>
+<a href="#">
 
-        <p>Last Modification: <span id="lastModified"></span></p>
+<img src="images/xx.png"
+alt="X">
 
-    </section>
+</a>
+
+<a href="#">
+
+<img src="images/linkedin.jpg"
+alt="LinkedIn">
+
+</a>
+
+</div>
+
+
+
+<div class="footer-right">
+
+<p>
+
+Tumwesige Nelson
+
+</p>
+
+<p>
+
+WDD231 Chamber Project
+
+</p>
+
+<p>
+
+© <span id="year"></span>
+
+</p>
+
+<p>
+
+Last Modified:
+
+<span id="lastModified"></span>
+
+</p>
+
+</div>
+
 
 </footer>
 
 </body>
+
 </html>
