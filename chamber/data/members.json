@@ -10,16 +10,6 @@
     },
 
     {
-        "name": "Cylo UG Graphics",
-        "address": "Nakulabye, Kampala",
-        "phone": "+256 784 243843",
-        "website": "https://example.com",
-        "image": "cylo.png",
-        "membership": 2,
-        "description": "Professional graphic design, branding, printing, and marketing services."
-    },
-
-    {
         "name": "Kampala Fresh Foods Ltd",
         "address": "Kisenyi, Kampala",
         "phone": "+256 701 111111",
@@ -54,7 +44,7 @@
         "address": "Wakiso District",
         "phone": "+256 704 444444",
         "website": "https://example.com",
-        "image": "green farm.webp",
+        "image": "green farm.png",
         "membership": 1,
         "description": "Modern farming, agriculture training, and sustainable food production."
     },
