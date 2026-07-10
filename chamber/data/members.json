@@ -47,7 +47,7 @@
         "name": "Green Farm Uganda",
         "address": "Wakiso District",
         "phone": "0704 444444",
-        "email": "info@greenfarm.com",
+        "email": "info@greenf.com",
         "website": "#https://example.com",
         "image": "green farm.png",
         "membership": 1,
@@ -79,19 +79,19 @@
     {
         "name": "Bright Future Academy",
         "address": "Kawempe, Kampala",
-        "phone": "0707 777777",
-        "email": "info@brightacademy.com",
+        "phone": "0707 747477",
+        "email": "info@brightac.com",
         "website": "#https://example.com",
         "image": "bright future academy.png",
         "membership": 1,
-        "description": "Education services providing quality learning opportunities."
+        "description": "Providing quality learning opportunities."
     },
 
     {
         "name": "Royal Hotel Kampala",
         "address": "Kampala Central",
-        "phone": "0708 888888",
-        "email": "info@royalhotel.com",
+        "phone": "0708888888",
+        "email": "info@royalh.com",
         "website": "#https://example.com",
         "image": "Royal hotel.png",
         "membership": 3,
@@ -102,7 +102,7 @@
         "name": "Urban Fashion Uganda",
         "address": "Owino Market, Kampala",
         "phone": "0709 999999",
-        "email": "info@urbanfashion.com",
+        "email": "info@urbanfs.com",
         "website": "#https://example.com",
         "image": "uganda urban fashons.png",
         "membership": 2,
@@ -124,10 +124,10 @@
         "name": "Lake Victoria Traders",
         "address": "Entebbe Road, Uganda",
         "phone": "0711 121212",
-        "email": "info@lakevictoriatraders.com",
+        "email": "info@lakevictt.com",
         "website": "#https://example.com",
         "image": "Lake victoria Traders.png",
         "membership": 1,
-        "description": "Wholesale and retail trading of quality products."
+        "description": "Trading of all quality products."
     }
 ]
