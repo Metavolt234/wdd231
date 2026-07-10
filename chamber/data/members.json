@@ -2,9 +2,9 @@
     {
         "name": "MetaVolt Tech Uganda",
         "address": "Kampala, Uganda",
-        "phone": "+256 700 000000",
+        "phone": "0700 000000",
         "email": "info@metavolt.tech",
-        "website": "https://metavolt234.github.io",
+        "website": "#https://metavolt234.github.io",
         "image": "metavolt.png",
         "membership": 3,
         "description": "Web development, software solutions, graphic design, and technology services."
@@ -13,9 +13,9 @@
     {
         "name": "Kampala Fresh Foods Ltd",
         "address": "Kisenyi, Kampala",
-        "phone": "+256 701 111111",
+        "phone": "0701 111111",
         "email": "info@freshfoods.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "kampala fresh foods.png",
         "membership": 1,
         "description": "Supplier of fresh agricultural products, fruits, and food supplies."
@@ -24,42 +24,42 @@
     {
         "name": "Uganda Digital Solutions",
         "address": "Ntinda, Kampala",
-        "phone": "+256 702 222222",
-        "email": "info@digitalsolutions.com",
-        "website": "https://example.com",
+        "phone": "0702 222222",
+        "email": "info@digitals.com",
+        "website": "#https://example.com",
         "image": "Uganda digital solutions.png",
         "membership": 3,
-        "description": "IT support, networking, cybersecurity, and digital transformation services."
+        "description": "IT support, networking and cybersecurity services."
     },
 
     {
         "name": "Kampala Construction Group",
         "address": "Industrial Area, Kampala",
-        "phone": "+256 703 333333",
-        "email": "info@construction.com",
-        "website": "https://example.com",
+        "phone": "0703 333333",
+        "email": "info@construct.com",
+        "website": "#https://example.com",
         "image": "kampala construction group.png",
         "membership": 2,
-        "description": "Construction, engineering, and property development company."
+        "description": "Construction, engineering, and property management."
     },
 
     {
         "name": "Green Farm Uganda",
         "address": "Wakiso District",
-        "phone": "+256 704 444444",
+        "phone": "0704 444444",
         "email": "info@greenfarm.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "green farm.png",
         "membership": 1,
-        "description": "Modern farming, agriculture training, and sustainable food production."
+        "description": "Modern farming, agriculture training, etc."
     },
 
     {
         "name": "Pearl Business Consultants",
         "address": "Bugolobi, Kampala",
-        "phone": "+256 705 555555",
-        "email": "info@pearlbusiness.com",
-        "website": "https://example.com",
+        "phone": "0705 555555",
+        "email": "info@pearlb.com",
+        "website": "#ttps://example.com",
         "image": "pearl busines.png",
         "membership": 3,
         "description": "Business consulting, entrepreneurship support, and financial planning."
@@ -68,9 +68,9 @@
     {
         "name": "Kampala Logistics Uganda",
         "address": "Bweyogerere, Kampala",
-        "phone": "+256 706 666666",
-        "email": "info@logistics.com",
-        "website": "https://example.com",
+        "phone": "0706 666666",
+        "email": "info@logis.com",
+        "website": "#https://example.com",
         "image": "kampala logistics.png",
         "membership": 2,
         "description": "Transportation, delivery, and supply chain management services."
@@ -79,9 +79,9 @@
     {
         "name": "Bright Future Academy",
         "address": "Kawempe, Kampala",
-        "phone": "+256 707 777777",
+        "phone": "0707 777777",
         "email": "info@brightacademy.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "bright future academy.png",
         "membership": 1,
         "description": "Education services providing quality learning opportunities."
@@ -90,9 +90,9 @@
     {
         "name": "Royal Hotel Kampala",
         "address": "Kampala Central",
-        "phone": "+256 708 888888",
+        "phone": "0708 888888",
         "email": "info@royalhotel.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "Royal hotel.png",
         "membership": 3,
         "description": "Hospitality services including accommodation and conference facilities."
@@ -101,9 +101,9 @@
     {
         "name": "Urban Fashion Uganda",
         "address": "Owino Market, Kampala",
-        "phone": "+256 709 999999",
+        "phone": "0709 999999",
         "email": "info@urbanfashion.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "uganda urban fashons.png",
         "membership": 2,
         "description": "Fashion design, clothing, and lifestyle products."
@@ -112,9 +112,9 @@
     {
         "name": "Eco Energy Solutions",
         "address": "Muyenga, Kampala",
-        "phone": "+256 710 101010",
+        "phone": "0710 101010",
         "email": "info@ecoenergy.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "Eco-energy solutions.png",
         "membership": 3,
         "description": "Renewable energy solutions including solar systems and installations."
@@ -123,9 +123,9 @@
     {
         "name": "Lake Victoria Traders",
         "address": "Entebbe Road, Uganda",
-        "phone": "+256 711 121212",
+        "phone": "0711 121212",
         "email": "info@lakevictoriatraders.com",
-        "website": "https://example.com",
+        "website": "#https://example.com",
         "image": "Lake victoria Traders.png",
         "membership": 1,
         "description": "Wholesale and retail trading of quality products."
