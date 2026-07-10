@@ -61,39 +61,38 @@ header {
     top: 1rem;
 }
 
-
 /* Navigation */
+
+#navMenu {
+    width: 100%;
+}
 
 .navigation {
     display: none;
     flex-direction: column;
-    margin-top: 1rem;
+    width: 100%;
+    background: var(--primary-color);
 }
-
 
 .navigation.open {
     display: flex;
 }
 
-
 .navigation li {
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,.3);
 }
-
 
 .navigation a {
     display: block;
-    padding: 0.8rem;
+    padding: 1rem;
     color: white;
 }
 
-
 .navigation a:hover,
 .navigation .active {
-    background-color: var(--accent-color);
-    color: var(--dark-color);
+    background: var(--accent-color);
+    color: black;
 }
-
 
 /* Main Content */
 
