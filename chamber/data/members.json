@@ -14,7 +14,7 @@
         "address": "Nakulabye, Kampala",
         "phone": "+256 784 243843",
         "website": "https://example.com",
-        "image": "cylo.webp",
+        "image": "im2.png",
         "membership": 2,
         "description": "Professional graphic design, branding, printing, and marketing services."
     },
@@ -24,7 +24,7 @@
         "address": "Kisenyi, Kampala",
         "phone": "+256 701 111111",
         "website": "https://example.com",
-        "image": "freshfoods.webp",
+        "image": "kampala fresh foods.png",
         "membership": 1,
         "description": "Supplier of fresh agricultural products, fruits, and food supplies."
     },
@@ -34,7 +34,7 @@
         "address": "Ntinda, Kampala",
         "phone": "+256 702 222222",
         "website": "https://example.com",
-        "image": "digital.webp",
+        "image": "Uganda digital solutions.png",
         "membership": 3,
         "description": "IT support, networking, cybersecurity, and digital transformation services."
     },
@@ -44,7 +44,7 @@
         "address": "Industrial Area, Kampala",
         "phone": "+256 703 333333",
         "website": "https://example.com",
-        "image": "construction.webp",
+        "image": "kampala construction group.png",
         "membership": 2,
         "description": "Construction, engineering, and property development company."
     },
@@ -64,7 +64,7 @@
         "address": "Bugolobi, Kampala",
         "phone": "+256 705 555555",
         "website": "https://example.com",
-        "image": "consultants.webp",
+        "image": "green farm.png",
         "membership": 3,
         "description": "Business consulting, entrepreneurship support, and financial planning."
     },
@@ -74,7 +74,7 @@
         "address": "Bweyogerere, Kampala",
         "phone": "+256 706 666666",
         "website": "https://example.com",
-        "image": "logistics.webp",
+        "image": "kampala logistics.png",
         "membership": 2,
         "description": "Transportation, delivery, and supply chain management services."
     },
@@ -84,7 +84,7 @@
         "address": "Kawempe, Kampala",
         "phone": "+256 707 777777",
         "website": "https://example.com",
-        "image": "academy.webp",
+        "image": "bright future academy.png",
         "membership": 1,
         "description": "Education services providing quality learning opportunities."
     },
@@ -94,7 +94,7 @@
         "address": "Kampala Central",
         "phone": "+256 708 888888",
         "website": "https://example.com",
-        "image": "hotel.webp",
+        "image": "Royal hotel.png",
         "membership": 3,
         "description": "Hospitality services including accommodation and conference facilities."
     },
@@ -104,7 +104,7 @@
         "address": "Owino Market, Kampala",
         "phone": "+256 709 999999",
         "website": "https://example.com",
-        "image": "fashion.webp",
+        "image": "uganda urban fashons.png",
         "membership": 2,
         "description": "Fashion design, clothing, and lifestyle products."
     },
@@ -114,7 +114,7 @@
         "address": "Muyenga, Kampala",
         "phone": "+256 710 101010",
         "website": "https://example.com",
-        "image": "energy.webp",
+        "image": "Eco-energy solutions.png",
         "membership": 3,
         "description": "Renewable energy solutions including solar systems and installations."
     },
@@ -124,7 +124,7 @@
         "address": "Entebbe Road, Uganda",
         "phone": "+256 711 121212",
         "website": "https://example.com",
-        "image": "traders.webp",
+        "image": "Lake victoria Traders.png",
         "membership": 1,
         "description": "Wholesale and retail trading of quality products."
     }
