@@ -27,7 +27,7 @@
         "phone": "0702 222222",
         "email": "info@digitals.com",
         "website": "#https://example.com",
-        "image": "Uganda digital solutions.png",
+        "image": "uganda digital solutions.png",
         "membership": 3,
         "description": "IT support, networking and cybersecurity services."
     },
@@ -93,7 +93,7 @@
         "phone": "0708888888",
         "email": "info@royalh.com",
         "website": "#https://example.com",
-        "image": "Royal hotel.png",
+        "image": "royal hotel.png",
         "membership": 3,
         "description": "Hospitality services including accommodation and conference facilities."
     },
@@ -115,7 +115,7 @@
         "phone": "0710 101010",
         "email": "info@ecoenergy.com",
         "website": "#https://example.com",
-        "image": "Eco-energy solutions.png",
+        "image": "eco-energy solutions.png",
         "membership": 3,
         "description": "Renewable energy solutions including solar systems and installations."
     },
@@ -126,7 +126,7 @@
         "phone": "0711 121212",
         "email": "info@lakevictt.com",
         "website": "#https://example.com",
-        "image": "Lake victoria Traders.png",
+        "image": "lake victoria Traders.png",
         "membership": 1,
         "description": "Trading of all quality products."
     }
