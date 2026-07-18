@@ -1,38 +1,42 @@
+// ===============================
+// HAMBURGER MENU
+// ===============================
+
 const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector("#navMenu");
+
+if (menuButton && navigation) {
+
+    menuButton.addEventListener("click", () => {
+
+        navigation.classList.toggle("open");
+
+        menuButton.textContent =
+            navigation.classList.contains("open") ? "✖" : "☰";
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            navigation.classList.contains("open")
+        );
+    });
+
+}
 
 
-menuButton.addEventListener("click", () => {
+// ===============================
+// CLOSE MENU WHEN WINDOW IS RESIZED
+// ===============================
 
-    navigation.classList.toggle("open");
+window.addEventListener("resize", () => {
 
-
-    if (navigation.classList.contains("open")) {
-
-        menuButton.textContent = "✖";
-
-    } else {
-
-        menuButton.textContent = "☰";
-
-    }
-
-});
-
-
-// Close menu when a navigation link is selected
-
-const navLinks = document.querySelectorAll(".navigation a");
-
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", () => {
+    if (window.innerWidth >= 608) {
 
         navigation.classList.remove("open");
 
         menuButton.textContent = "☰";
 
-    });
+        menuButton.setAttribute("aria-expanded", "false");
+
+    }
 
 });

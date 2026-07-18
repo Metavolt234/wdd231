@@ -1,390 +1,360 @@
-/* ===========================
-   CSS VARIABLES
-=========================== */
+/* ==========================================
+   SMALL.CSS
+   WDD 231 Chamber Project
+========================================== */
 
-:root {
-    --primary: #2d2d2d;
-    --secondary: #f2f2f2;
-    --accent: #dcdcdc;
-    --text: #222;
-    --border: #cfcfcf;
-    --white: #fff;
+/* ---------- CSS VARIABLES ---------- */
 
-    --max-width: 1200px;
+:root{
+    --primary-color:#0d3b66;
+    --secondary-color:#faf0ca;
+    --accent-color:#f4d35e;
+    --light-color:#ffffff;
+    --dark-color:#222;
+    --border-color:#ddd;
+    --shadow:0 3px 10px rgba(0,0,0,.15);
+    --max-width:1200px;
 }
 
-/* ===========================
-   GENERAL
-=========================== */
+/* ---------- RESET ---------- */
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text);
-    background: #fafafa;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:var(--dark-color);
+    line-height:1.6;
 }
 
-main {
-    padding: 1rem;
+img{
+    max-width:100%;
+    display:block;
+    height:auto;
 }
 
-h2 {
-    margin: .5rem 0 1rem;
-    font-size: 2rem;
+a{
+    text-decoration:none;
 }
 
-/* ===========================
-   HEADER
-=========================== */
+/* ---------- HEADER ---------- */
 
-header {
-
-    background: var(--secondary);
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: .75rem 1rem;
-
-    border-bottom: 1px solid var(--border);
-
-    position: relative;
-
+header{
+    background:var(--primary-color);
+    color:white;
+    padding:1rem;
 }
 
-.logo {
+.logo{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
 
-    display: flex;
-
-    align-items: center;
-
-    gap: .6rem;
-
+.logo img{
+    width:70px;
 }
 
 .logo h1{
-
-    margin:0;
-
-    font-size:1.1rem;
-
+    font-size:1.2rem;
 }
 
-.logo p{
-
-    margin:0;
-
-    font-size:.85rem;
-
-}
-
-/* ===========================
-   HAMBURGER
-=========================== */
+/* ---------- HAMBURGER ---------- */
 
 #menu{
-
-    font-size:2rem;
-
     background:none;
-
     border:none;
-
+    color:white;
+    font-size:2rem;
     cursor:pointer;
-
+    margin-top:1rem;
 }
 
-/* ===========================
-   NAVIGATION
-=========================== */
+/* ---------- NAVIGATION ---------- */
+
+#navMenu{
+    display:none;
+}
+
+#navMenu.open{
+    display:block;
+}
 
 .navigation{
-
-    display:none;
-
     list-style:none;
-
-    margin:0;
-
-    padding:0;
-
-    background:#333;
-
-    position:absolute;
-
-    top:100%;
-
-    left:0;
-
-    width:100%;
-
-}
-
-.navigation.open{
-
-    display:block;
-
+    display:flex;
+    flex-direction:column;
+    margin-top:1rem;
 }
 
 .navigation li{
-
     border-top:1px solid rgba(255,255,255,.2);
-
 }
 
 .navigation a{
-
     display:block;
-
     color:white;
+    padding:.9rem;
+}
 
-    text-decoration:none;
+.navigation a:hover,
+.navigation a.active{
+    background:var(--accent-color);
+    color:black;
+}
 
+/* ---------- MAIN ---------- */
+
+main{
+    max-width:var(--max-width);
+    margin:auto;
     padding:1rem;
-
 }
 
-.navigation a:hover{
+/* ---------- HERO ---------- */
 
-    background:#555;
-
+.hero{
+    position:relative;
 }
 
-.navigation .active{
-
-    background:#666;
-
+.hero img{
+    width:100%;
 }
 
-/* ===========================
-   BUTTONS
-=========================== */
+.hero-text{
+    position:absolute;
+    left:1rem;
+    bottom:1rem;
+    background:rgba(0,0,0,.65);
+    color:white;
+    padding:1rem;
+    border-radius:8px;
+    max-width:320px;
+}
+
+.hero-text h2{
+    margin-bottom:.75rem;
+}
+
+.hero-text p{
+    margin-bottom:1rem;
+}
+
+.cta-button{
+    display:inline-block;
+    background:var(--accent-color);
+    color:black;
+    padding:.75rem 1.5rem;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* ---------- HOME GRID ---------- */
+
+.home-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+    margin:2rem 0;
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+
+.card h2{
+    background:var(--primary-color);
+    color:white;
+    padding:.8rem;
+    text-align:center;
+}
+
+.card article,
+.card div{
+    padding:1rem;
+}
+
+/* ---------- WEATHER ---------- */
+
+#current-weather{
+    text-align:center;
+}
+
+#forecast{
+    display:flex;
+    justify-content:space-evenly;
+    gap:.5rem;
+    flex-wrap:wrap;
+}
+
+#forecast div{
+    background:#eee;
+    padding:.75rem;
+    border-radius:6px;
+    min-width:90px;
+    text-align:center;
+}
+
+/* ---------- SPOTLIGHTS ---------- */
+
+.spotlights{
+    margin:2rem 0;
+}
+
+.spotlights h2{
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+#spotlight-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+.spotlight-card{
+    background:white;
+    border-radius:8px;
+    padding:1rem;
+    text-align:center;
+    box-shadow:var(--shadow);
+}
+
+.spotlight-card img{
+    width:120px;
+    margin:auto;
+}
+
+/* ---------- DIRECTORY ---------- */
 
 .view-buttons{
-
-    text-align:center;
-
-    margin:1rem 0 2rem;
-
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin:1rem 0;
 }
 
 .view-buttons button{
-
-    width:80px;
-
-    padding:.6rem;
-
-    margin:0 .3rem;
-
-    background:#ddd;
-
-    border:1px solid #999;
-
+    padding:.7rem 1.2rem;
     cursor:pointer;
-
 }
 
-/* ===========================
-   GRID VIEW
-=========================== */
+/* GRID */
 
 #members.grid{
-
     display:grid;
-
     grid-template-columns:1fr;
-
     gap:1rem;
-
 }
 
 #members.grid section{
-
-    background:#ececec;
-
-    border-radius:8px;
-
-    overflow:hidden;
-
-    border:1px solid #ddd;
-
-}
-
-#members.grid h3{
-
-    text-align:center;
-
-    margin:0;
-
-    background:#ddd;
-
-    padding:.7rem;
-
-}
-
-#members.grid .tagline{
-
-    text-align:center;
-
-    font-size:.8rem;
-
-    margin-bottom:.5rem;
-
-}
-
-.card-content{
-
-    display:flex;
-
-    gap:1rem;
-
+    background:white;
     padding:1rem;
-
+    text-align:center;
+    border-radius:8px;
+    box-shadow:var(--shadow);
 }
 
-.card-content img{
-
-    width:90px;
-
-    height:90px;
-
-    object-fit:contain;
-
-    border:1px solid #999;
-
+#members.grid img{
+    width:140px;
+    margin:1rem auto;
 }
 
-.details{
-
-    flex:1;
-
-    font-size:.9rem;
-
-}
-
-.details p{
-
-    margin:.3rem 0;
-
-}
-
-.details a{
-
-    color:#004aad;
-
-    text-decoration:none;
-
-}
-
-/* ===========================
-   LIST VIEW
-=========================== */
+/* LIST */
 
 #members.list{
-
-    display:block;
-
+    display:flex;
+    flex-direction:column;
 }
 
 #members.list section{
-
-    display:grid;
-
-    grid-template-columns:2fr 1fr 1fr;
-
-    align-items:center;
-
-    padding:.9rem 1rem;
-
-    border-bottom:1px solid #ccc;
-
+    display:block;
+    background:white;
+    padding:1rem;
+    margin-bottom:1rem;
 }
 
-#members.list section:nth-child(even){
-
-    background:#d9d9d9;
-
-}
-
-#members.list img,
-
-#members.list .tagline,
-
-#members.list .details p{
-
+#members.list img{
     display:none;
-
 }
 
-#members.list h3{
+/* ---------- JOIN FORM ---------- */
 
-    margin:0;
-
-    background:none;
-
-    padding:0;
-
-    font-size:1rem;
-
+form{
+    background:white;
+    padding:1rem;
+    border-radius:8px;
+    box-shadow:var(--shadow);
 }
 
-#members.list .details{
-
-    display:contents;
-
+label{
+    display:block;
+    margin-top:1rem;
 }
 
-#members.list .details a{
-
-    justify-self:end;
-
+input,
+select,
+textarea{
+    width:100%;
+    padding:.8rem;
+    margin-top:.4rem;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+input[type=submit]{
+    margin-top:1rem;
+    background:var(--primary-color);
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* ---------- DISCOVER ---------- */
+
+.discover-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+.discover-grid img{
+    border-radius:8px;
+}
+
+/* ---------- FOOTER ---------- */
 
 footer{
-
-    background:#ececec;
-
-    margin-top:2rem;
-
-    padding:1.5rem;
-
+    background:var(--primary-color);
+    color:white;
+    padding:2rem 1rem;
     text-align:center;
-
 }
 
 .footer-social{
-
     display:flex;
-
     justify-content:center;
-
     gap:1rem;
-
     margin:1rem 0;
-
 }
+
 .footer-social img{
-
-    width:40px;
-
+    width:35px;
 }
-/* ===========================
-   UTILITIES
-=========================== */
-.hidden{
 
-    display:none;
+/* ---------- ACCESSIBILITY ---------- */
 
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus{
+    outline:3px solid var(--accent-color);
+    outline-offset:3px;
 }
+  
