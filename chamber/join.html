@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Kampala Chamber of Commerce</title>
+
+    <meta name="description" content="Join the Kampala Chamber of Commerce to connect with businesses, grow your network, and access exclusive member benefits.">
+    <meta name="author" content="Tumwesige Nelson">
+
+    <meta property="og:title" content="Join Kampala Chamber of Commerce">
+    <meta property="og:description" content="Apply for Chamber membership and enjoy exclusive business opportunities.">
+    <meta property="og:image" content="https://metavolt234.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://metavolt234.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img src="images/logo.png" alt="Kampala Chamber Logo">
+
+        <div>
+            <p class="site-name">Kampala Chamber of Commerce</p>
+            <small>Supporting Business Growth</small>
+        </div>
+
+    </div>
+
+    <button id="menu" aria-label="Open Navigation">☰</button>
+
+    <nav id="navMenu">
+
+        <ul class="navigation">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="directory.html">Directory</a></li>
+
+            <li><a href="join.html" class="active">Join</a></li>
+
+            <li><a href="discover.html">Discover</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<h1>Join Kampala Chamber of Commerce</h1>
+
+<div class="join-container">
+
+<!-- ===================== FORM ==================== -->
+
+<section class="join-form">
+
+<form method="get" action="thankyou.html">
+
+<label>
+First Name
+<input
+type="text"
+name="firstName"
+required
+title="Enter your first name"
+autocomplete="given-name">
+</label>
+
+<label>
+Last Name
+<input
+type="text"
+name="lastName"
+required
+title="Enter your last name"
+autocomplete="family-name">
+</label>
+
+<label>
+Organization Title
+<input
+type="text"
+name="organizationTitle"
+title="Organization Title"
+autocomplete="organization-title"
+pattern="[A-Za-z\s\-]{7,}">
+</label>
+
+<label>
+Email Address
+<input
+type="email"
+name="email"
+required
+title="Enter your email address"
+autocomplete="email"
+placeholder="example@email.com">
+</label>
+
+<label>
+Mobile Phone
+<input
+type="tel"
+name="phone"
+required
+title="Enter mobile number"
+autocomplete="tel">
+</label>
+
+<label>
+Business / Organization Name
+<input
+type="text"
+name="organization"
+required
+title="Business Name"
+autocomplete="organization">
+</label>
+
+<label>
+Membership Level
+
+<select
+name="membership"
+required>
+
+<option value="">Select Membership</option>
+
+<option value="np">NP Membership</option>
+
+<option value="bronze">Bronze Membership</option>
+
+<option value="silver">Silver Membership</option>
+
+<option value="gold">Gold Membership</option>
+
+</select>
+
+</label>
+
+<label>
+Business Description
+
+<textarea
+name="description"
+rows="5"
+title="Business Description"></textarea>
+
+</label>
+
+<input
+type="hidden"
+id="timestamp"
+name="timestamp">
+
+<input
+type="submit"
+value="Submit Membership Application">
+
+</form>
+
+</section>
+
+<!-- ===================== MEMBERSHIP CARDS ==================== -->
+
+<aside class="membership-cards">
+
+<div class="member-card">
+
+<h2>NP Membership</h2>
+
+<p>Free membership for non-profit organizations.</p>
+
+<a href="#" data-dialog="npModal">Learn More</a>
+
+</div>
+
+<div class="member-card">
+
+<h2>Bronze Membership</h2>
+
+<p>Perfect for small businesses.</p>
+
+<a href="#" data-dialog="bronzeModal">Learn More</a>
+
+</div>
+
+<div class="member-card">
+
+<h2>Silver Membership</h2>
+
+<p>Extra marketing and networking opportunities.</p>
+
+<a href="#" data-dialog="silverModal">Learn More</a>
+
+</div>
+
+<div class="member-card">
+
+<h2>Gold Membership</h2>
+
+<p>Premium business exposure and sponsorships.</p>
+
+<a href="#" data-dialog="goldModal">Learn More</a>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- ===================== MODALS ==================== -->
+
+<dialog id="npModal">
+
+<h2>NP Membership</h2>
+
+<ul>
+
+<li>Free Membership</li>
+
+<li>Business Directory Listing</li>
+
+<li>Networking Opportunities</li>
+
+<li>Community Events</li>
+
+</ul>
+
+<button class="closeDialog">Close</button>
+
+</dialog>
+
+<dialog id="bronzeModal">
+
+<h2>Bronze Membership</h2>
+
+<ul>
+
+<li>Directory Listing</li>
+
+<li>Monthly Newsletter</li>
+
+<li>Business Workshops</li>
+
+<li>Networking Events</li>
+
+</ul>
+
+<button class="closeDialog">Close</button>
+
+</dialog>
+
+<dialog id="silverModal">
+
+<h2>Silver Membership</h2>
+
+<ul>
+
+<li>Everything in Bronze</li>
+
+<li>Social Media Promotion</li>
+
+<li>Event Discounts</li>
+
+<li>Featured Directory Placement</li>
+
+</ul>
+
+<button class="closeDialog">Close</button>
+
+</dialog>
+
+<dialog id="goldModal">
+
+<h2>Gold Membership</h2>
+
+<ul>
+
+<li>Everything in Silver</li>
+
+<li>Homepage Spotlight</li>
+
+<li>Priority Event Registration</li>
+
+<li>Premium Advertising</li>
+
+<li>Sponsorship Opportunities</li>
+
+</ul>
+
+<button class="closeDialog">Close</button>
+
+</dialog>
+
+<footer>
+
+<p>&copy; <span id="year"></span> Kampala Chamber of Commerce</p>
+
+<p>Tumwesige Nelson | WDD 231</p>
+
+<p>Last Modified:
+<span id="lastModified"></span>
+</p>
+
+<div class="footer-social">
+
+<img src="images/facebook-logo.png" alt="Facebook">
+
+<img src="images/x-logo.png" alt="X">
+
+<img src="images/linkedin.jpg" alt="LinkedIn">
+
+</div>
+
+</footer>
+
+</body>
+</html>

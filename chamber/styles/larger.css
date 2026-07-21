@@ -241,3 +241,82 @@
     }
 
 }
+
+/* ==========================================
+                                JOIN PAGE DESKTOP
+========================================== */
+
+@media only screen and (min-width: 768px) {
+
+    /* ===========================
+       Join Layout
+    =========================== */
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .join-form {
+        margin: 0;
+    }
+
+    .membership-cards {
+        position: sticky;
+        top: 1rem;
+    }
+
+    /* ===========================
+       Membership Cards
+    =========================== */
+
+    .member-card {
+        transition:
+            transform .4s ease,
+            box-shadow .4s ease;
+    }
+
+    .member-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    }
+
+    /* ===========================
+       Form
+    =========================== */
+
+    .join-form form {
+        gap: 1.25rem;
+    }
+
+    .join-form input,
+    .join-form select,
+    .join-form textarea {
+        font-size: 1rem;
+    }
+
+    /* ===========================
+       Thank You Page
+    =========================== */
+
+    .thankyou-container {
+        max-width: 850px;
+    }
+
+    .summary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* ===========================
+       Dialog
+    =========================== */
+
+    dialog {
+        width: 550px;
+    }
+
+}
