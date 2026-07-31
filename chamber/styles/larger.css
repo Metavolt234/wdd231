@@ -320,3 +320,240 @@
     }
 
 }
+    
+/* ==========================================
+   DESKTOP STYLES (640px and above)
+========================================== */
+
+@media screen and (min-width: 640px) {
+
+    /* -------------------------
+       Header
+    ------------------------- */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 1rem 1.25rem;
+        border-radius: 5px;
+        transition: background .3s;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,.15);
+    }
+
+    /* -------------------------
+       Main
+    ------------------------- */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* -------------------------
+       Discover Grid
+    ------------------------- */
+
+    .discover-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 2rem;
+
+    }
+
+    /* -------------------------
+       Card Layout
+    ------------------------- */
+
+    .card {
+
+        display: grid;
+
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas:
+
+            "image title"
+
+            "image address"
+
+            "image description"
+
+            "image button";
+
+        align-items: start;
+
+    }
+
+    .card img {
+
+        grid-area: image;
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+    }
+
+    .card h3 {
+
+        grid-area: title;
+
+        padding: 1rem 1rem .25rem;
+
+    }
+
+    .card address {
+
+        grid-area: address;
+
+        padding: 0 1rem;
+
+    }
+
+    .card .description {
+
+        grid-area: description;
+
+        padding: 1rem;
+
+    }
+
+    .card button {
+
+        grid-area: button;
+
+        margin: 1rem;
+
+        width: 160px;
+
+    }
+
+    /* -------------------------
+       Hover Effect
+       (Desktop Only)
+    ------------------------- */
+
+    .card img {
+
+        transition: transform .35s ease,
+                    filter .35s ease;
+
+    }
+
+    .card:hover img {
+
+        transform: scale(1.05);
+
+        filter: brightness(1.1);
+
+    }
+
+}
+
+/* ==========================================
+   LARGE DESKTOP (1000px+)
+========================================== */
+
+@media screen and (min-width: 1000px) {
+
+    .discover-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+/* ==========================================
+   NAMED GRID AREA LAYOUTS
+   (Rubric Requirement)
+========================================== */
+
+.card.layout-one {
+
+    grid-template-areas:
+
+        "image title"
+
+        "image address"
+
+        "image description"
+
+        "image button";
+
+}
+
+.card.layout-two {
+
+    grid-template-areas:
+
+        "title image"
+
+        "address image"
+
+        "description image"
+
+        "button image";
+
+}
+
+.card.layout-two img {
+
+    grid-area: image;
+
+}
+
+.card.layout-three {
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+
+        "image"
+
+        "title"
+
+        "address"
+
+        "description"
+
+        "button";
+
+}
+
+.card.layout-three img {
+
+    width: 100%;
+
+    height: 250px;
+
+}
