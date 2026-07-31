@@ -565,3 +565,194 @@ dialog li {
     outline: 3px solid var(--accent-color);
     outline-offset: 3px;
 }
+
+/* ===========================================================
+   WEEK 05 - DISCOVER PAGE
+=========================================================== */
+
+/* Visitor Message */
+
+.visitor-message {
+    background: var(--accent-color);
+    color: #222;
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Intro */
+
+.discover-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.discover-intro p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ===========================================================
+   DISCOVER GRID
+=========================================================== */
+
+.discover-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+
+}
+
+/* Grid Areas */
+
+.discover-card:nth-child(1){grid-area:card1;}
+.discover-card:nth-child(2){grid-area:card2;}
+.discover-card:nth-child(3){grid-area:card3;}
+.discover-card:nth-child(4){grid-area:card4;}
+.discover-card:nth-child(5){grid-area:card5;}
+.discover-card:nth-child(6){grid-area:card6;}
+.discover-card:nth-child(7){grid-area:card7;}
+.discover-card:nth-child(8){grid-area:card8;}
+
+/* ===========================================================
+   CARD
+=========================================================== */
+
+.discover-card {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    display: grid;
+
+    grid-template-areas:
+
+        "title"
+        "image"
+        "address"
+        "text"
+        "button";
+
+}
+
+.discover-card h2 {
+
+    grid-area: title;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    margin: 0;
+
+    padding: 1rem;
+
+    text-align: center;
+
+}
+
+.discover-card figure {
+
+    grid-area: image;
+
+    margin: 0;
+
+}
+
+.discover-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+.discover-card address {
+
+    grid-area: address;
+
+    padding: 1rem;
+
+    font-style: normal;
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+
+}
+
+.discover-card p {
+
+    grid-area: text;
+
+    padding: 0 1rem 1rem;
+
+    line-height: 1.6;
+
+}
+
+.discover-card button {
+
+    grid-area: button;
+
+    margin: 1rem;
+
+    padding: .9rem;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: background .3s;
+
+}
+
+.discover-card button:hover {
+
+    background: #155a96;
+
+}
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+/* No image hover effects on mobile (assignment requirement) */
+
+.discover-card img {
+
+    transition: none;
+
+}
