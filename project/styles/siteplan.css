@@ -1,0 +1,171 @@
+/* ===========================
+   Google Fonts
+=========================== */
+
+:root{
+    --primary:#2E7D32;
+    --secondary:#FFC107;
+    --light:#F5F5F5;
+    --dark:#333333;
+    --white:#ffffff;
+    --shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Roboto",sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:2rem 1rem;
+}
+
+header h1{
+    font-family:"Poppins",sans-serif;
+    font-size:2.2rem;
+    margin-bottom:.5rem;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+/* ===========================
+   Main
+=========================== */
+
+main{
+    width:min(1100px,90%);
+    margin:2rem auto;
+}
+
+section{
+    background:white;
+    margin-bottom:2rem;
+    padding:1.5rem;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+section h2{
+    font-family:"Poppins",sans-serif;
+    color:var(--primary);
+    margin-bottom:1rem;
+    border-bottom:3px solid var(--secondary);
+    padding-bottom:.4rem;
+}
+
+section h3{
+    margin-bottom:1rem;
+    color:var(--primary);
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+ul{
+    margin-left:1.5rem;
+}
+
+li{
+    margin-bottom:.75rem;
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem;
+}
+
+th{
+    background:var(--primary);
+    color:white;
+    padding:.8rem;
+}
+
+td{
+    padding:.8rem;
+    border:1px solid #ddd;
+}
+
+.green{
+    background:#2E7D32;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+
+.gold{
+    background:#FFC107;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* ===========================
+   Wireframes
+=========================== */
+
+.wireframes{
+    display:grid;
+    gap:2rem;
+}
+
+.wireframe{
+    text-align:center;
+}
+
+.wireframe img{
+    width:100%;
+    max-width:500px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:1.5rem;
+    margin-top:2rem;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media screen and (min-width:768px){
+
+    .wireframes{
+        grid-template-columns:1fr 1fr;
+    }
+
+    header h1{
+        font-size:2.8rem;
+    }
+
+}
