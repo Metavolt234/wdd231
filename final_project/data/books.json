@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Classic",
+    "price": 12.99,
+    "rating": 4.7,
+    "image": "images/book1.webp",
+    "description": "A timeless novel about wealth, love, and the American Dream."
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "category": "Classic",
+    "price": 14.50,
+    "rating": 4.9,
+    "image": "images/book2.webp",
+    "description": "A moving story of justice, compassion, and courage."
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Science Fiction",
+    "price": 13.75,
+    "rating": 4.8,
+    "image": "images/book3.webp",
+    "description": "A dystopian novel exploring surveillance and totalitarianism."
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "category": "Romance",
+    "price": 11.99,
+    "rating": 4.8,
+    "image": "images/book4.webp",
+    "description": "A beloved romance filled with wit and unforgettable characters."
+  },
+  {
+    "id": 5,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantasy",
+    "price": 15.99,
+    "rating": 4.9,
+    "image": "images/book5.webp",
+    "description": "Bilbo Baggins embarks on an unforgettable adventure."
+  },
+  {
+    "id": 6,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "category": "Fantasy",
+    "price": 18.99,
+    "rating": 5.0,
+    "image": "images/book6.webp",
+    "description": "The magical beginning of Harry Potter's journey."
+  },
+  {
+    "id": 7,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Inspirational",
+    "price": 10.99,
+    "rating": 4.7,
+    "image": "images/book7.webp",
+    "description": "A philosophical story about pursuing your dreams."
+  },
+  {
+    "id": 8,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "category": "Business",
+    "price": 16.99,
+    "rating": 4.6,
+    "image": "images/book8.webp",
+    "description": "Classic principles for achieving success and wealth."
+  },
+  {
+    "id": 9,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self Help",
+    "price": 19.99,
+    "rating": 5.0,
+    "image": "images/book9.webp",
+    "description": "Build better habits and transform your life."
+  },
+  {
+    "id": 10,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "category": "Business",
+    "price": 17.99,
+    "rating": 4.8,
+    "image": "images/book10.webp",
+    "description": "A guide to creating innovative businesses efficiently."
+  },
+  {
+    "id": 11,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "category": "Finance",
+    "price": 15.50,
+    "rating": 4.7,
+    "image": "images/book11.webp",
+    "description": "Lessons about money, investing, and financial freedom."
+  },
+  {
+    "id": 12,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Productivity",
+    "price": 16.50,
+    "rating": 4.8,
+    "image": "images/book12.webp",
+    "description": "Master focused work for greater productivity."
+  },
+  {
+    "id": 13,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "category": "Finance",
+    "price": 18.50,
+    "rating": 4.9,
+    "image": "images/book13.webp",
+    "description": "Understanding the emotions and behaviors behind money."
+  },
+  {
+    "id": 14,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "price": 29.99,
+    "rating": 4.9,
+    "image": "images/book14.webp",
+    "description": "A handbook of agile software craftsmanship."
+  },
+  {
+    "id": 15,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "category": "Programming",
+    "price": 24.99,
+    "rating": 4.8,
+    "image": "images/book15.webp",
+    "description": "A modern introduction to JavaScript programming."
+  }
+]
