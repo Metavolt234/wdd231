@@ -1,50 +1,25 @@
-// ===============================
-// Mobile Navigation Module
-// Fagil Manday Library
-// ===============================
-
 export function initializeNavigation() {
+  const button = document.querySelector("#menu");
+  const nav = document.querySelector("#navMenu");
+  if (!button || !nav) return;
 
-    const menuButton = document.querySelector("#menu");
-    const navigation = document.querySelector("#navMenu");
+  const setOpen = (open) => {
+    nav.classList.toggle("open", open);
+    button.setAttribute("aria-expanded", String(open));
+    button.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    button.textContent = open ? "×" : "☰";
+  };
 
-    // Stop if elements don't exist
-    if (!menuButton || !navigation) return;
+  setOpen(false);
+  button.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
 
-    // Accessibility
-    menuButton.setAttribute("aria-expanded", "false");
-
-    menuButton.addEventListener("click", () => {
-
-        navigation.classList.toggle("open");
-
-        const isOpen = navigation.classList.contains("open");
-
-        menuButton.innerHTML = isOpen ? "✖" : "☰";
-
-        menuButton.setAttribute("aria-expanded", isOpen);
-
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth < 700) setOpen(false);
     });
+  });
 
-    // Close menu after clicking a link (mobile)
-    const links = navigation.querySelectorAll("a");
-
-    links.forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            if (window.innerWidth < 768) {
-
-                navigation.classList.remove("open");
-
-                menuButton.innerHTML = "☰";
-
-                menuButton.setAttribute("aria-expanded", "false");
-
-            }
-
-        });
-
-    });
-
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 700) setOpen(false);
+  });
 }

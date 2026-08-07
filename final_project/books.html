@@ -1,182 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Book Collection | Fagil Manday Library</title>
-
-    <meta name="description"
-        content="Browse our digital collection of books available at Fagil Manday Library.">
-
-    <meta name="author" content="Your Name">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Fagil Manday Library">
-    <meta property="og:description" content="Browse our collection of books.">
-    <meta property="og:image" content="images/logo.webp">
-    <meta property="og:type" content="website">
-
-    <link rel="icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/larger.css">
-    <link rel="stylesheet" href="css/modal.css">
-
-    <script type="module" src="js/books.js" defer></script>
-
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo-area">
-
-        <img src="images/logo.webp"
-            alt="Library Logo"
-            width="60"
-            height="60">
-
-        <div>
-
-            <h1>Fagil Manday Library</h1>
-
-            <p>Read. Learn. Grow.</p>
-
-        </div>
-
-    </div>
-
-    <button id="menu" aria-label="Navigation">
-        ☰
-    </button>
-
-    <nav id="navMenu">
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="books.html" class="active">Books</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Fagil Manday">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.svg">
+<title>Books | Fagil Manday Library</title>
+<meta name="description" content="Search and browse the Fagil Manday Library digital book collection.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/modal.css">
+<script type="module" src="js/books.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Fagil Manday Library home">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <div><h1>Fagil Manday Library</h1><span>Read. Learn. Grow.</span></div>
+    </a>
+    <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <nav id="navMenu" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="books.html" class="active">Books</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
     </nav>
-
+  </div>
 </header>
-
-<main>
-
-<h2 class="center">Our Book Collection</h2>
-
-<p class="center">
-Browse our growing collection of books loaded dynamically from a JSON file.
-</p>
-
-<section class="controls">
-
-<input
-type="search"
-id="search"
-placeholder="Search books...">
-
-<select id="category">
-
-<option value="all">All Categories</option>
-
-<option value="Classic">Classic</option>
-
-<option value="Fantasy">Fantasy</option>
-
-<option value="Business">Business</option>
-
-<option value="Finance">Finance</option>
-
-<option value="Programming">Programming</option>
-
-<option value="Science Fiction">Science Fiction</option>
-
-<option value="Inspirational">Inspirational</option>
-
-<option value="Productivity">Productivity</option>
-
-<option value="Romance">Romance</option>
-
-<option value="Self Help">Self Help</option>
-
-</select>
-
-</section>
-
-<section
-id="bookContainer"
-class="book-grid">
-
-<!-- JavaScript loads books here -->
-
-</section>
-
-<dialog id="bookModal">
-
-<div id="modalContent">
-
-<!-- Dynamic content -->
-
-</div>
-
-<form method="dialog">
-
-<button class="button">
-
-Close
-
-</button>
-
-</form>
-
-</dialog>
-
+<main id="main-content">
+  <section class="page-heading">
+    <div class="eyebrow">Digital collection</div><h2>Find a book worth your time.</h2>
+    <p>Search by title or filter by category. Select any book to see its full details.</p>
+  </section>
+  <section class="card toolbar" aria-label="Book filters">
+    <div class="field"><label for="search">Search books</label><input type="search" id="search" placeholder="Try “Atomic Habits”..." autocomplete="off"></div>
+    <div class="field"><label for="category">Filter by category</label><select id="category"><option value="all">All categories</option></select></div>
+  </section>
+  <div class="results-line"><span id="resultsCount">Loading books…</span><span>15 titles in the collection</span></div>
+  <section aria-label="Book collection"><div id="bookContainer" class="book-grid"></div></section>
 </main>
-
-<footer>
-
-<p>
-
-&copy;
-
-<span id="year"></span>
-
-Fagil Manday Library
-
-</p>
-
-<p id="lastModified"></p>
-
-<p>
-
-<a href="attributions.html">
-
-Attributions
-
-</a>
-
-|
-
-<a href="#">
-
-Project Video
-
-</a>
-
-</p>
-
+<dialog id="bookModal" aria-labelledby="modalTitle"><div id="modalContent"></div></dialog>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>Fagil Manday Library</h2>
+        <p>A welcoming digital space for discovering books, exploring ideas, and growing through reading.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a><a href="books.html">Book Collection</a><a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h3>Project</h3>
+        <a href="attributions.html">Attributions</a>
+        <a href="index.html#about">About the Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fagil Manday Library</span>
+      <span id="lastModified"></span>
+    </div>
+  </div>
 </footer>
-
-</body>
-
-</html>
+</body></html>

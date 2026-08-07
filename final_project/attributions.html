@@ -1,170 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Attributions | Fagil Manday Library</title>
-
-    <meta name="description"
-        content="Acknowledgements and sources used in the Fagil Manday Library website.">
-
-    <meta name="author" content="Your Name">
-
-    <link rel="icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/larger.css">
-
-    <script type="module" src="js/main.js" defer></script>
-
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo-area">
-
-        <img src="images/logo.webp"
-            alt="Library Logo"
-            width="60"
-            height="60">
-
-        <div>
-
-            <h1>Fagil Manday Library</h1>
-
-            <p>Read. Learn. Grow.</p>
-
-        </div>
-
-    </div>
-
-    <button id="menu" aria-label="Open Navigation">
-        ☰
-    </button>
-
-    <nav id="navMenu">
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="books.html">Books</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Fagil Manday">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.svg">
+<title>Attributions | Fagil Manday Library</title>
+<meta name="description" content="Sources and acknowledgements for the Fagil Manday Library project.">
+<link rel="stylesheet" href="css/base.css">
+<script type="module" src="js/main.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Fagil Manday Library home">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <div><h1>Fagil Manday Library</h1><span>Read. Learn. Grow.</span></div>
+    </a>
+    <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <nav id="navMenu" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="books.html" class="">Books</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
     </nav>
-
+  </div>
 </header>
-
-<main>
-
-<section class="card">
-
-<h2>Resource Attributions</h2>
-
-<p>
-The following resources were used in creating this website.
-</p>
-
-<h3>Images</h3>
-
-<ul>
-
-<li>
-Library images created by the project author or sourced from royalty-free image websites such as
-<a href="https://unsplash.com" target="_blank">Unsplash</a>.
-</li>
-
-<li>
-Book cover images are for educational demonstration purposes only.
-</li>
-
-</ul>
-
-<h3>Books</h3>
-
-<ul>
-
-<li>
-Book titles and author information are based on publicly available bibliographic information.
-</li>
-
-</ul>
-
-<h3>Icons</h3>
-
-<ul>
-
-<li>
-Hamburger menu uses the Unicode character ☰.
-</li>
-
-</ul>
-
-<h3>Fonts</h3>
-
-<ul>
-
-<li>
-Google Fonts – Poppins
-</li>
-
-</ul>
-
-<h3>Development References</h3>
-
-<ul>
-
-<li>MDN Web Docs</li>
-
-<li>BYU–Idaho WDD231 Course Materials</li>
-
-<li>JavaScript Fetch API Documentation</li>
-
-<li>HTML Living Standard</li>
-
-<li>CSS Specifications</li>
-
-</ul>
-
-</section>
-
+<main id="main-content">
+  <section class="card prose">
+    <div class="eyebrow">Project information</div><h2>Attributions & references</h2>
+    <p>Thank you to the resources and standards that informed this educational project.</p>
+    <h3>Images</h3><ul><li>Project logo, hero artwork, and book-cover placeholders are original local SVG assets created for this project.</li><li>Book titles and author information are used for educational demonstration purposes.</li></ul>
+    <h3>Development references</h3><ul><li>MDN Web Docs for HTML, CSS, JavaScript, Fetch API, local storage, and dialog patterns.</li><li>BYU–Idaho WDD231 course materials and project requirements.</li><li>HTML and CSS web standards for semantic and responsive implementation.</li></ul>
+    <h3>Accessibility</h3><ul><li>Semantic landmarks, visible focus states, keyboard-friendly navigation, descriptive labels, reduced-motion support, and an accessible modal structure are included throughout the project.</li></ul>
+  </section>
 </main>
-
-<footer>
-
-<p>
-
-&copy;
-
-<span id="year"></span>
-
-Fagil Manday Library
-
-</p>
-
-<p id="lastModified"></p>
-
-<p>
-
-<a href="index.html">
-
-Home
-
-</a>
-
-</p>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>Fagil Manday Library</h2>
+        <p>A welcoming digital space for discovering books, exploring ideas, and growing through reading.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a><a href="books.html">Book Collection</a><a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h3>Project</h3>
+        <a href="attributions.html">Attributions</a>
+        <a href="index.html#about">About the Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fagil Manday Library</span>
+      <span id="lastModified"></span>
+    </div>
+  </div>
 </footer>
-
-</body>
-
-</html>
+</body></html>

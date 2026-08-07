@@ -6,7 +6,7 @@
     "category": "Classic",
     "price": 12.99,
     "rating": 4.7,
-    "image": "images/book1.webp",
+    "image": "images/book1.svg",
     "description": "A timeless novel about wealth, love, and the American Dream."
   },
   {
@@ -14,9 +14,9 @@
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "category": "Classic",
-    "price": 14.50,
+    "price": 14.5,
     "rating": 4.9,
-    "image": "images/book2.webp",
+    "image": "images/book2.svg",
     "description": "A moving story of justice, compassion, and courage."
   },
   {
@@ -26,7 +26,7 @@
     "category": "Science Fiction",
     "price": 13.75,
     "rating": 4.8,
-    "image": "images/book3.webp",
+    "image": "images/book3.svg",
     "description": "A dystopian novel exploring surveillance and totalitarianism."
   },
   {
@@ -36,7 +36,7 @@
     "category": "Romance",
     "price": 11.99,
     "rating": 4.8,
-    "image": "images/book4.webp",
+    "image": "images/book4.svg",
     "description": "A beloved romance filled with wit and unforgettable characters."
   },
   {
@@ -46,7 +46,7 @@
     "category": "Fantasy",
     "price": 15.99,
     "rating": 4.9,
-    "image": "images/book5.webp",
+    "image": "images/book5.svg",
     "description": "Bilbo Baggins embarks on an unforgettable adventure."
   },
   {
@@ -56,7 +56,7 @@
     "category": "Fantasy",
     "price": 18.99,
     "rating": 5.0,
-    "image": "images/book6.webp",
+    "image": "images/book6.svg",
     "description": "The magical beginning of Harry Potter's journey."
   },
   {
@@ -66,7 +66,7 @@
     "category": "Inspirational",
     "price": 10.99,
     "rating": 4.7,
-    "image": "images/book7.webp",
+    "image": "images/book7.svg",
     "description": "A philosophical story about pursuing your dreams."
   },
   {
@@ -76,7 +76,7 @@
     "category": "Business",
     "price": 16.99,
     "rating": 4.6,
-    "image": "images/book8.webp",
+    "image": "images/book8.svg",
     "description": "Classic principles for achieving success and wealth."
   },
   {
@@ -86,7 +86,7 @@
     "category": "Self Help",
     "price": 19.99,
     "rating": 5.0,
-    "image": "images/book9.webp",
+    "image": "images/book9.svg",
     "description": "Build better habits and transform your life."
   },
   {
@@ -96,7 +96,7 @@
     "category": "Business",
     "price": 17.99,
     "rating": 4.8,
-    "image": "images/book10.webp",
+    "image": "images/book10.svg",
     "description": "A guide to creating innovative businesses efficiently."
   },
   {
@@ -104,9 +104,9 @@
     "title": "Rich Dad Poor Dad",
     "author": "Robert Kiyosaki",
     "category": "Finance",
-    "price": 15.50,
+    "price": 15.5,
     "rating": 4.7,
-    "image": "images/book11.webp",
+    "image": "images/book11.svg",
     "description": "Lessons about money, investing, and financial freedom."
   },
   {
@@ -114,9 +114,9 @@
     "title": "Deep Work",
     "author": "Cal Newport",
     "category": "Productivity",
-    "price": 16.50,
+    "price": 16.5,
     "rating": 4.8,
-    "image": "images/book12.webp",
+    "image": "images/book12.svg",
     "description": "Master focused work for greater productivity."
   },
   {
@@ -124,9 +124,9 @@
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
     "category": "Finance",
-    "price": 18.50,
+    "price": 18.5,
     "rating": 4.9,
-    "image": "images/book13.webp",
+    "image": "images/book13.svg",
     "description": "Understanding the emotions and behaviors behind money."
   },
   {
@@ -136,7 +136,7 @@
     "category": "Programming",
     "price": 29.99,
     "rating": 4.9,
-    "image": "images/book14.webp",
+    "image": "images/book14.svg",
     "description": "A handbook of agile software craftsmanship."
   },
   {
@@ -146,7 +146,7 @@
     "category": "Programming",
     "price": 24.99,
     "rating": 4.8,
-    "image": "images/book15.webp",
+    "image": "images/book15.svg",
     "description": "A modern introduction to JavaScript programming."
   }
 ]

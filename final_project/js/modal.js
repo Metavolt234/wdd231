@@ -1,220 +1,38 @@
-// ==========================================
-// modal.js
-// Fagil Manday Library
-// Handles Book Details Modal
-// ==========================================
-
-
-export function openBookModal(book, modal, modalContent) {
-
-
-    // Check elements exist
-
-    if (!book || !modal || !modalContent) {
-
-        console.error(
-            "Modal elements missing."
-        );
-
-        return;
-
-    }
-
-
-
-    // Create modal content
-
-    modalContent.innerHTML = `
-
-
-        <img
-
-            src="${book.image}"
-
-            alt="${book.title}"
-
-            width="250"
-
-            height="350"
-
-            loading="lazy">
-
-
-        <h2>
-            ${book.title}
-        </h2>
-
-
-
-        <p>
-
-            <strong>
-            Author:
-            </strong>
-
-            ${book.author}
-
-        </p>
-
-
-
-        <p>
-
-            <strong>
-            Category:
-            </strong>
-
-            ${book.category}
-
-        </p>
-
-
-
-        <p>
-
-            <strong>
-            Price:
-            </strong>
-
-            $${book.price}
-
-        </p>
-
-
-
-        <p>
-
-            <strong>
-            Rating:
-            </strong>
-
-            ⭐ ${book.rating}
-
-        </p>
-
-
-
-        <p>
-
-            ${book.description}
-
-        </p>
-
-
-
-        <button
-
-            id="favoriteBtn"
-
-            class="button">
-
-            Add to Favorites
-
-        </button>
-
-
-    `;
-
-
-
-    // Open modal
-
-    modal.showModal();
-
-
-
-    setupModalAccessibility(modal);
-
-
-}
-
-
-
-
-// ==========================================
-// Accessibility Controls
-// ==========================================
-
-
-function setupModalAccessibility(modal) {
-
-
-
-    // Close with Escape key
-
-    const escapeHandler =
-        (event) => {
-
-
-            if (event.key === "Escape") {
-
-
-                modal.close();
-
-
-                document.removeEventListener(
-                    "keydown",
-                    escapeHandler
-                );
-
-
-            }
-
-
-        };
-
-
-
-    document.addEventListener(
-        "keydown",
-        escapeHandler
-    );
-
-
-
-    // Close clicking outside dialog
-
-
-    modal.addEventListener(
-
-        "click",
-
-        (event) => {
-
-
-            const dialog =
-                modal.getBoundingClientRect();
-
-
-
-            const outsideClick =
-
-                event.clientX < dialog.left ||
-
-                event.clientX > dialog.right ||
-
-                event.clientY < dialog.top ||
-
-                event.clientY > dialog.bottom;
-
-
-
-            if (outsideClick) {
-
-
-                modal.close();
-
-
-            }
-
-
-        },
-
-        {
-            once: true
-        }
-
-    );
-
-
+export function openBookModal(book, modal, modalContent, favoriteHandler) {
+  if (!book || !modal || !modalContent) return;
+
+  modalContent.innerHTML = `
+    <div class="modal-wrap">
+      <div class="modal-top">
+        <button class="modal-close" type="button" aria-label="Close book details">×</button>
+      </div>
+      <div class="modal-body">
+        <img class="modal-cover" src="${book.image}" alt="${book.title} book cover" width="180" height="240">
+        <div>
+          <div class="eyebrow">${book.category}</div>
+          <h2 id="modalTitle">${book.title}</h2>
+          <p><strong>Author:</strong> ${book.author}</p>
+          <div class="book-meta">
+            <span class="badge">${book.category}</span>
+            <span class="rating">★ ${Number(book.rating).toFixed(1)} / 5</span>
+          </div>
+          <p class="modal-description">${book.description}</p>
+          <p><strong class="price">$${Number(book.price).toFixed(2)}</strong></p>
+          <div class="modal-actions">
+            <button id="favoriteBtn" class="button" type="button">♡ Save to favorites</button>
+            <button class="button ghost modal-close" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+  modal.querySelectorAll(".modal-close").forEach(btn => btn.addEventListener("click", () => modal.close()));
+  const favorite = modal.querySelector("#favoriteBtn");
+  if (favorite && favoriteHandler) favorite.addEventListener("click", () => favoriteHandler(book, favorite));
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) modal.close();
+  }, { once: true });
+
+  modal.showModal();
 }

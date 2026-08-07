@@ -1,109 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Thank You | Fagil Manday Library</title>
-
-    <meta name="description"
-          content="Thank you for contacting Fagil Manday Library.">
-
-    <meta name="author"
-          content="Your Name">
-
-    <link rel="icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/larger.css">
-
-    <script type="module" src="js/thankyou.js" defer></script>
-
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo-area">
-
-        <img src="images/logo.webp"
-             alt="Library Logo"
-             width="60"
-             height="60">
-
-        <div>
-
-            <h1>Fagil Manday Library</h1>
-
-            <p>Read. Learn. Grow.</p>
-
-        </div>
-
-    </div>
-
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Fagil Manday">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.svg">
+<title>Thank You | Fagil Manday Library</title>
+<meta name="description" content="Confirmation page for your Fagil Manday Library contact submission.">
+<link rel="stylesheet" href="css/base.css">
+<script type="module" src="js/thankyou.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Fagil Manday Library home">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <div><h1>Fagil Manday Library</h1><span>Read. Learn. Grow.</span></div>
+    </a>
+    <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <nav id="navMenu" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="books.html" class="">Books</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-
-<main>
-
-<section class="card">
-
-<h2>Thank You!</h2>
-
-<p>
-Your message has been received successfully.
-</p>
-
-<hr>
-
-<h3>Your Submitted Information</h3>
-
-<p><strong>Full Name:</strong>
-<span id="fullname"></span></p>
-
-<p><strong>Email:</strong>
-<span id="email"></span></p>
-
-<p><strong>Phone:</strong>
-<span id="phone"></span></p>
-
-<p><strong>Favorite Category:</strong>
-<span id="book"></span></p>
-
-<p><strong>Message:</strong></p>
-
-<p id="message"></p>
-
-<br>
-
-<a href="index.html" class="button">
-Return Home
-</a>
-
-</section>
-
+<main id="main-content">
+  <section class="card success-card">
+    <div class="success-mark" aria-hidden="true">✓</div>
+    <div class="eyebrow">Message received</div><h2>Thank you for reaching out!</h2>
+    <p>Your submission has been received. Here is a summary of the information you entered.</p>
+    <div class="submission">
+      <div class="submission-row"><strong>Full name</strong><span id="fullname"></span></div>
+      <div class="submission-row"><strong>Email</strong><span id="email"></span></div>
+      <div class="submission-row"><strong>Phone</strong><span id="phone"></span></div>
+      <div class="submission-row"><strong>Category</strong><span id="book"></span></div>
+      <div class="submission-row"><strong>Message</strong><span id="message"></span></div>
+    </div>
+    <a class="button secondary" href="books.html">Continue exploring books</a>
+    <a class="button ghost" href="index.html" style="margin-left:.5rem">Return home</a>
+  </section>
 </main>
-
-<footer>
-
-<p>
-
-&copy;
-
-<span id="year"></span>
-
-Fagil Manday Library
-
-</p>
-
-<p id="lastModified"></p>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>Fagil Manday Library</h2>
+        <p>A welcoming digital space for discovering books, exploring ideas, and growing through reading.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a><a href="books.html">Book Collection</a><a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h3>Project</h3>
+        <a href="attributions.html">Attributions</a>
+        <a href="index.html#about">About the Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fagil Manday Library</span>
+      <span id="lastModified"></span>
+    </div>
+  </div>
 </footer>
-
-</body>
-
-</html>
+</body></html>

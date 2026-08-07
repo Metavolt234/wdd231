@@ -1,196 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact Us | Fagil Manday Library</title>
-
-    <meta name="description"
-        content="Contact Fagil Manday Library for book recommendations, questions, and support.">
-
-    <meta name="author" content="Your Name">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Contact Fagil Manday Library">
-    <meta property="og:description" content="Send us your questions or suggestions.">
-    <meta property="og:image" content="images/logo.webp">
-    <meta property="og:type" content="website">
-
-    <link rel="icon" href="favicon.ico">
-    
-
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/larger.css">
-    <link rel="stylesheet" href="css/forms.css">
-
-    <script type="module" src="js/main.js" defer></script>
-
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo-area">
-
-        <img src="images/logo.webp"
-            alt="Fagil Manday Library Logo"
-            width="60"
-            height="60">
-
-        <div>
-
-            <h1>Fagil Manday Library</h1>
-
-            <p>Read. Learn. Grow.</p>
-
-        </div>
-
-    </div>
-
-    <button id="menu" aria-label="Open Navigation">
-        ☰
-    </button>
-
-    <nav id="navMenu">
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="books.html">Books</a></li>
-
-            <li><a href="contact.html" class="active">Contact</a></li>
-
-        </ul>
-
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Fagil Manday">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.svg">
+<title>Contact | Fagil Manday Library</title>
+<meta name="description" content="Contact Fagil Manday Library with questions, recommendations, and feedback.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/forms.css">
+<script type="module" src="js/main.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Fagil Manday Library home">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <div><h1>Fagil Manday Library</h1><span>Read. Learn. Grow.</span></div>
+    </a>
+    <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <nav id="navMenu" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="books.html" class="">Books</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </nav>
-
+  </div>
 </header>
-
-<main>
-
-<section>
-
-    <h2 class="center">Contact Us</h2>
-
-    <p class="center">
-        We'd love to hear from you. Fill out the form below.
-    </p>
-
-</section>
-
-<form action="thankyou.html" method="get">
-
-    <label for="fullname">
-        Full Name
-    </label>
-
-    <input
-        type="text"
-        id="fullname"
-        name="fullname"
-        required
-        minlength="3"
-        autocomplete="name">
-
-    <label for="email">
-        Email Address
-    </label>
-
-    <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        autocomplete="email">
-
-    <label for="phone">
-        Phone Number
-    </label>
-
-    <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="+256..."
-        autocomplete="tel">
-
-    <label for="book">
-        Favorite Book Category
-    </label>
-
-    <select id="book" name="book">
-
-        <option value="Classic">Classic</option>
-
-        <option value="Fantasy">Fantasy</option>
-
-        <option value="Business">Business</option>
-
-        <option value="Programming">Programming</option>
-
-        <option value="Finance">Finance</option>
-
-        <option value="Self Help">Self Help</option>
-
-    </select>
-
-    <label for="message">
-        Message
-    </label>
-
-    <textarea
-        id="message"
-        name="message"
-        required></textarea>
-
-    <input
-        type="submit"
-        value="Send Message"
-        class="button">
-
-</form>
-
+<main id="main-content">
+  <section class="page-heading"><div class="eyebrow">Get in touch</div><h2>Tell us what you would like to read.</h2><p>Send a question, recommendation, or message. We will use your submission to improve the library experience.</p></section>
+  <section class="contact-layout">
+    <aside class="contact-info">
+      <h2>Let's connect</h2><p>Whether you are looking for a specific title or have an idea for the collection, your feedback is welcome.</p>
+      <div class="info-item"><strong>Library focus</strong><span>Reading, learning, discovery, and lifelong growth.</span></div>
+      <div class="info-item"><strong>Response</strong><span>Please include enough detail in your message for us to understand your request.</span></div>
+      <div class="info-item"><strong>Privacy</strong><span>Your form details are displayed only on the confirmation page in this project.</span></div>
+    </aside>
+    <form action="thankyou.html" method="get">
+      <div class="form-grid two">
+        <div class="field"><label class="required" for="fullname">Full name</label><input id="fullname" name="fullname" type="text" required minlength="3" autocomplete="name" placeholder="Your full name"></div>
+        <div class="field"><label class="required" for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+      </div>
+      <div class="form-grid two" style="margin-top:1rem">
+        <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+256 ..."></div>
+        <div class="field"><label for="book">Favorite category</label><select id="book" name="book"><option>Classic</option><option>Fantasy</option><option>Business</option><option>Programming</option><option>Finance</option><option>Self Help</option><option>Romance</option><option>Productivity</option></select></div>
+      </div>
+      <div class="field" style="margin-top:1rem"><label class="required" for="message">Message</label><textarea id="message" name="message" required minlength="10" placeholder="Tell us what you would like to share..."></textarea><div class="form-help">Please provide at least 10 characters.</div></div>
+      <button class="button full" type="submit" style="margin-top:1.2rem">Send message →</button>
+    </form>
+  </section>
 </main>
-
-<footer>
-
-<p>
-
-&copy;
-
-<span id="year"></span>
-
-Fagil Manday Library
-
-</p>
-
-<p id="lastModified"></p>
-
-<p>
-
-<a href="attributions.html">
-
-Attributions
-
-</a>
-
-|
-
-<a href="#">
-
-Project Video
-
-</a>
-
-</p>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>Fagil Manday Library</h2>
+        <p>A welcoming digital space for discovering books, exploring ideas, and growing through reading.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a><a href="books.html">Book Collection</a><a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h3>Project</h3>
+        <a href="attributions.html">Attributions</a>
+        <a href="index.html#about">About the Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fagil Manday Library</span>
+      <span id="lastModified"></span>
+    </div>
+  </div>
 </footer>
-
-</body>
-
-</html>
+</body></html>

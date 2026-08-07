@@ -1,177 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Fagil Manday Library | Home</title>
-
-    <meta name="description" content="Discover books, reading resources, and educational materials at Fagil Manday Library.">
-    <meta name="author" content="Your Name">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Fagil Manday Library">
-    <meta property="og:description" content="Explore books and reading resources online.">
-    <meta property="og:image" content="images/logo.webp">
-    <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/wdd231/finalproject/">
-    <meta property="og:type" content="website">
-
-    <link rel="icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/larger.css">
-
-    <script type="module" src="js/main.js" defer></script>
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo-area">
-
-        <img src="images/logo.webp"
-             alt="Fagil Manday Library Logo"
-             width="60"
-             height="60">
-
-        <div>
-
-            <h1>Fagil Manday Library</h1>
-
-            <p>Read. Learn. Grow.</p>
-
-        </div>
-
-    </div>
-
-    <button id="menu" aria-label="Open Navigation">
-        ☰
-    </button>
-
-    <nav id="navMenu">
-
-        <ul>
-
-            <li><a href="index.html" class="active">Home</a></li>
-
-            <li><a href="books.html">Books</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Fagil Manday">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.svg">
+<title>Fagil Manday Library | Read. Learn. Grow.</title>
+<meta name="description" content="Discover books, reading resources, and educational materials at Fagil Manday Library.">
+<link rel="stylesheet" href="css/base.css">
+<script type="module" src="js/main.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Fagil Manday Library home">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <div><h1>Fagil Manday Library</h1><span>Read. Learn. Grow.</span></div>
+    </a>
+    <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <nav id="navMenu" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="books.html" class="">Books</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
     </nav>
-
+  </div>
 </header>
-
-<main>
-
-<section class="hero">
-
-    <picture>
-
-        <img
-            src="images/hero.webp"
-            alt="Library Hero Image"
-            width="1200"
-            height="600"
-            loading="eager">
-
-    </picture>
-
+<main id="main-content">
+  <section class="hero" aria-labelledby="hero-title">
+    <picture><img src="images/hero.svg" alt="Abstract illustration of books representing a modern digital library" width="1600" height="900"></picture>
     <div class="hero-text">
-
-        <h2>Welcome to Fagil Manday Library</h2>
-
-        <p>
-
-            Discover a growing collection of books from different authors and
-            categories. Browse, search, and learn with our digital library.
-
-        </p>
-
-        <a href="books.html" class="button">
-            Explore Books
-        </a>
-
+      <div class="eyebrow">Your digital reading space</div>
+      <h2 id="hero-title">Discover your next great read.</h2>
+      <p>Explore a curated collection of classics, business books, fantasy adventures, finance guides, programming resources, and more.</p>
+      <a class="button" href="books.html">Explore the collection →</a>
     </div>
+  </section>
 
-</section>
+  <section class="card visitor-card" aria-live="polite">
+    <div class="visitor-icon" aria-hidden="true">✦</div>
+    <div><strong id="visitor-message">Welcome to Fagil Manday Library.</strong><p>We are glad you are here. Take a moment to discover something new.</p></div>
+  </section>
 
-<section class="card center">
-    <p id="visitor-message"></p>
-</section>
+  <section id="about" class="about">
+    <div class="about-copy"><div class="eyebrow">About the library</div><h2>A simple place to learn and grow.</h2></div>
+    <div><p>Fagil Manday Library provides a clean online experience for discovering books and learning resources. Browse the collection, search by title, explore details, and send us your recommendations.</p><p style="margin-top:.8rem">The project demonstrates responsive design, dynamic JavaScript content, JSON data, local storage, accessible navigation, and an interactive book-details dialog.</p></div>
+  </section>
 
-<section class="about">
-
-    <h2>About Our Library</h2>
-
-    <p>
-
-        Fagil Manday Library provides readers with a modern online experience.
-        Our website allows visitors to browse books, learn about authors,
-        and contact us for recommendations. Built using HTML, CSS,
-        and JavaScript, this project demonstrates responsive web design,
-        dynamic content generation, and accessibility best practices.
-
-    </p>
-
-</section>
-
-<section class="features">
-
-    <h2>Why Choose Us?</h2>
-
+  <section aria-labelledby="features-title">
+    <div class="section-head"><div><div class="eyebrow">What you can do</div><h2 id="features-title">Built for curious readers.</h2></div><a class="button ghost" href="books.html">View all books</a></div>
     <div class="feature-grid">
-
-        <article>
-
-            <h3>Large Collection</h3>
-
-            <p>Browse books from multiple categories.</p>
-
-        </article>
-
-        <article>
-
-            <h3>Modern Design</h3>
-
-            <p>Responsive and accessible on all devices.</p>
-
-        </article>
-
-        <article>
-
-            <h3>Dynamic Content</h3>
-
-            <p>Books are loaded dynamically from a JSON file.</p>
-
-        </article>
-
+      <article class="feature-card"><div class="feature-icon" aria-hidden="true">▦</div><h3>Explore the collection</h3><p>Browse a growing selection of books across multiple categories and interests.</p></article>
+      <article class="feature-card"><div class="feature-icon" aria-hidden="true">⌕</div><h3>Search quickly</h3><p>Find a title instantly and narrow results with the category filter.</p></article>
+      <article class="feature-card"><div class="feature-icon" aria-hidden="true">♡</div><h3>Save favorites</h3><p>Use the book details window to save books you want to remember using local storage.</p></article>
     </div>
-
-</section>
-
+  </section>
 </main>
-
-<footer>
-
-    <p>&copy; <span id="year"></span> Fagil Manday Library</p>
-
-    <p id="lastModified"></p>
-
-    <p>
-
-        <a href="attributions.html">Attributions</a> |
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/wdd231" target="_blank">
-            GitHub Repository
-        </a> |
-        <a href="#">Project Video</a>
-
-    </p>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>Fagil Manday Library</h2>
+        <p>A welcoming digital space for discovering books, exploring ideas, and growing through reading.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a><a href="books.html">Book Collection</a><a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h3>Project</h3>
+        <a href="attributions.html">Attributions</a>
+        <a href="index.html#about">About the Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fagil Manday Library</span>
+      <span id="lastModified"></span>
+    </div>
+  </div>
 </footer>
-
-</body>
-</html>
+</body></html>

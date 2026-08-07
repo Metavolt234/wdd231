@@ -1,74 +1,13 @@
-// ==========================================
-// thankyou.js
-// Displays Submitted Form Information
-// ==========================================
+import { initializeNavigation } from "./navigation.js";
+initializeNavigation();
 
+const year = document.querySelector("#year");
+const modified = document.querySelector("#lastModified");
+if (year) year.textContent = new Date().getFullYear();
+if (modified) modified.textContent = `Updated ${new Date(document.lastModified).toLocaleDateString()}`;
 
-const year =
-    document.querySelector("#year");
-
-
-if (year) {
-
-    year.textContent =
-        new Date().getFullYear();
-
-}
-
-
-
-const modified =
-    document.querySelector("#lastModified");
-
-
-if (modified) {
-
-    modified.textContent =
-        `Last Updated: ${document.lastModified}`;
-
-}
-
-
-
-
-// Read form data
-
-const params =
-    new URLSearchParams(
-        window.location.search
-    );
-
-
-
-const fields = [
-
-    "fullname",
-    "email",
-    "phone",
-    "book",
-    "message"
-
-];
-
-
-
-fields.forEach(field => {
-
-
-    const element =
-        document.querySelector(`#${field}`);
-
-
-
-    if (element) {
-
-
-        element.textContent =
-            params.get(field) ||
-            "Not Provided";
-
-
-    }
-
-
+const params = new URLSearchParams(window.location.search);
+["fullname","email","phone","book","message"].forEach(field => {
+  const element = document.querySelector(`#${field}`);
+  if (element) element.textContent = params.get(field)?.trim() || "Not provided";
 });
