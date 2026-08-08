@@ -1,0 +1,10 @@
+/* T. Nelson Library — larger-screen enhancements */
+@media (min-width:700px){
+  .header-inner{min-height:82px}
+  .hero-text{max-width:720px}
+  .visitor-card{padding:1.5rem 1.6rem}
+}
+
+@media (min-width:1200px){
+  .header-inner,main,.footer-inner{width:min(1200px,calc(100% - 3rem))}
+}

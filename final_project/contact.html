@@ -3,19 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Fagil Manday">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Contact | T. Nelson Library">
+<meta property="og:description" content="T. Nelson Library contact page.">
+<meta property="og:image" content="https://metavolt234.github.io/wdd231/final_project/images/hero.svg">
+<meta property="og:url" content="https://metavolt234.github.io/wdd231/final_project/contact.html">
 <link rel="icon" href="images/logo.svg">
 <title>Contact | T. Nelson Library</title>
-<meta name="description" content="Contact T. Nelson Library with questions, recommendations, and feedback.">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/forms.css">
-<script type="module" src="js/main.js" defer></script>
+<meta name="description" content="Contact T. Nelson Library with questions, recommendations, and feedback about the digital collection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script type="module" src="scripts/main.js" defer></script>
 </head><body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html" aria-label="T. Nelson Library home">
-      <img src="images/logo.svg" alt="" width="48" height="48">
-      <div><h1>T. Nelson Library</h1><span>Read. Learn. Grow.</span></div>
+      <img src="images/logo.svg" alt="T. Nelson Library logo" width="48" height="48">
+      <div class="brand-title"><h2>T. Nelson Library</h2><span>Read. Learn. Grow.</span></div>
     </a>
     <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
     <nav id="navMenu" class="site-nav" aria-label="Main navigation">
@@ -28,7 +35,7 @@
   </div>
 </header>
 <main id="main-content">
-  <section class="page-heading"><div class="eyebrow">Get in touch</div><h2>Tell us what you would like to read.</h2><p>Send a question, recommendation, or message. We will use your submission to improve the library experience.</p></section>
+  <section class="page-heading"><div class="eyebrow">Get in touch</div><h1>Tell us what you would like to read.</h1><p>Send a question, recommendation, or message. We will use your submission to improve the library experience.</p></section>
   <section class="contact-layout">
     <aside class="contact-info">
       <h2>Let's connect</h2><p>Whether you are looking for a specific title or have an idea for the collection, your feedback is welcome.</p>
@@ -41,12 +48,12 @@
         <div class="field"><label class="required" for="fullname">Full name</label><input id="fullname" name="fullname" type="text" required minlength="3" autocomplete="name" placeholder="Your full name"></div>
         <div class="field"><label class="required" for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
       </div>
-      <div class="form-grid two" style="margin-top:1rem">
+      <div class="form-grid two" class="mt-1">
         <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+256 ..."></div>
         <div class="field"><label for="book">Favorite category</label><select id="book" name="book"><option>Classic</option><option>Fantasy</option><option>Business</option><option>Programming</option><option>Finance</option><option>Self Help</option><option>Romance</option><option>Productivity</option></select></div>
       </div>
-      <div class="field" style="margin-top:1rem"><label class="required" for="message">Message</label><textarea id="message" name="message" required minlength="10" placeholder="Tell us what you would like to share..."></textarea><div class="form-help">Please provide at least 10 characters.</div></div>
-      <button class="button full" type="submit" style="margin-top:1.2rem">Send message →</button>
+      <div class="field" class="mt-1"><label class="required" for="message">Message</label><textarea id="message" name="message" required minlength="10" placeholder="Tell us what you would like to share..."></textarea><div class="form-help">Please provide at least 10 characters.</div></div>
+      <button class="button full" type="submit" class="mt-12">Send message →</button>
     </form>
   </section>
 </main>

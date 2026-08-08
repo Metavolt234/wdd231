@@ -3,18 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Fagil Manday">
 <meta property="og:type" content="website">
+<meta property="og:title" content="T. Nelson Library | Read. Learn. Grow.">
+<meta property="og:description" content="T. Nelson Library home and digital reading collection.">
+<meta property="og:image" content="https://metavolt234.github.io/wdd231/final_project/images/hero.svg">
+<meta property="og:url" content="https://metavolt234.github.io/wdd231/final_project/index.html">
 <link rel="icon" href="images/logo.svg">
 <title>T. Nelson Library | Read. Learn. Grow.</title>
 <meta name="description" content="Discover books, reading resources, and educational materials at T. Nelson Library.">
-<link rel="stylesheet" href="css/base.css">
-<script type="module" src="js/main.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script type="module" src="scripts/main.js" defer></script>
 </head><body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html" aria-label="T. Nelson Library home">
-      <img src="images/logo.svg" alt="" width="48" height="48">
-      <div><h1>T. Nelson Library</h1><span>Read. Learn. Grow.</span></div>
+      <img src="images/logo.svg" alt="T. Nelson Library logo" width="48" height="48">
+      <div class="brand-title"><h2>T. Nelson Library</h2><span>Read. Learn. Grow.</span></div>
     </a>
     <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
     <nav id="navMenu" class="site-nav" aria-label="Main navigation">
@@ -31,7 +39,7 @@
     <picture><img src="images/hero.svg" alt="Abstract illustration of books representing a modern digital library" width="1600" height="900"></picture>
     <div class="hero-text">
       <div class="eyebrow">Your digital reading space</div>
-      <h2 id="hero-title">Discover your next great read.</h2>
+      <h1 id="hero-title">Discover your next great read.</h1>
       <p>Explore a curated collection of classics, business books, fantasy adventures, finance guides, programming resources, and more.</p>
       <a class="button" href="books.html">Explore the collection →</a>
     </div>
@@ -44,7 +52,7 @@
 
   <section id="about" class="about">
     <div class="about-copy"><div class="eyebrow">About the library</div><h2>A simple place to learn and grow.</h2></div>
-    <div><p>T. Nelson Library provides a clean online experience for discovering books and learning resources. Browse the collection, search by title, explore details, and send us your recommendations.</p><p style="margin-top:.8rem">The project demonstrates responsive design, dynamic JavaScript content, JSON data, local storage, accessible navigation, and an interactive book-details dialog.</p></div>
+    <div><p>T. Nelson Library provides a clean online experience for discovering books and learning resources. Browse the collection, search by title, explore details, and send us your recommendations.</p><p class="mt-1">The project demonstrates responsive design, dynamic JavaScript content, JSON data, local storage, accessible navigation, and an interactive book-details dialog.</p></div>
   </section>
 
   <section aria-labelledby="features-title">

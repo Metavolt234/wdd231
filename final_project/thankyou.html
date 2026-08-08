@@ -3,18 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Fagil Manday">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Thank You | T. Nelson Library">
+<meta property="og:description" content="T. Nelson Library form confirmation page.">
+<meta property="og:image" content="https://metavolt234.github.io/wdd231/final_project/images/hero.svg">
+<meta property="og:url" content="https://metavolt234.github.io/wdd231/final_project/thankyou.html">
 <link rel="icon" href="images/logo.svg">
 <title>Thank You | T. Nelson Library</title>
 <meta name="description" content="Confirmation page for your T. Nelson Library contact submission.">
-<link rel="stylesheet" href="css/base.css">
-<script type="module" src="js/thankyou.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script type="module" src="scripts/thankyou.js" defer></script>
 </head><body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html" aria-label="T. Nelson Library home">
-      <img src="images/logo.svg" alt="" width="48" height="48">
-      <div><h1>T. Nelson Library</h1><span>Read. Learn. Grow.</span></div>
+      <img src="images/logo.svg" alt="T. Nelson Library logo" width="48" height="48">
+      <div class="brand-title"><h2>T. Nelson Library</h2><span>Read. Learn. Grow.</span></div>
     </a>
     <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
     <nav id="navMenu" class="site-nav" aria-label="Main navigation">
@@ -29,7 +37,7 @@
 <main id="main-content">
   <section class="card success-card">
     <div class="success-mark" aria-hidden="true">✓</div>
-    <div class="eyebrow">Message received</div><h2>Thank you for reaching out!</h2>
+    <div class="eyebrow">Message received</div><h1>Thank you for reaching out!</h1>
     <p>Your submission has been received. Here is a summary of the information you entered.</p>
     <div class="submission">
       <div class="submission-row"><strong>Full name</strong><span id="fullname"></span></div>
@@ -39,7 +47,7 @@
       <div class="submission-row"><strong>Message</strong><span id="message"></span></div>
     </div>
     <a class="button secondary" href="books.html">Continue exploring books</a>
-    <a class="button ghost" href="index.html" style="margin-left:.5rem">Return home</a>
+    <a class="button ghost" href="index.html" class="ml-05">Return home</a>
   </section>
 </main>
 <footer class="site-footer">

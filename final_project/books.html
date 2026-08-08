@@ -3,19 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Fagil Manday">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Books | T. Nelson Library">
+<meta property="og:description" content="T. Nelson Library book collection page.">
+<meta property="og:image" content="https://metavolt234.github.io/wdd231/final_project/images/hero.svg">
+<meta property="og:url" content="https://metavolt234.github.io/wdd231/final_project/books.html">
 <link rel="icon" href="images/logo.svg">
 <title>Books | T. Nelson Library</title>
-<meta name="description" content="Search and browse the T. Nelson Library digital book collection.">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/modal.css">
-<script type="module" src="js/books.js" defer></script>
+<meta name="description" content="Search and browse the T. Nelson Library digital book collection by title and category.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script type="module" src="scripts/books.js" defer></script>
 </head><body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html" aria-label="T. Nelson Library home">
-      <img src="images/logo.svg" alt="" width="48" height="48">
-      <div><h1>T. Nelson Library</h1><span>Read. Learn. Grow.</span></div>
+      <img src="images/logo.svg" alt="T. Nelson Library logo" width="48" height="48">
+      <div class="brand-title"><h2>T. Nelson Library</h2><span>Read. Learn. Grow.</span></div>
     </a>
     <button id="menu" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
     <nav id="navMenu" class="site-nav" aria-label="Main navigation">
@@ -29,7 +36,7 @@
 </header>
 <main id="main-content">
   <section class="page-heading">
-    <div class="eyebrow">Digital collection</div><h2>Find a book worth your time.</h2>
+    <div class="eyebrow">Digital collection</div><h1>Find a book worth your time.</h1>
     <p>Search by title or filter by category. Select any book to see its full details.</p>
   </section>
   <section class="card toolbar" aria-label="Book filters">

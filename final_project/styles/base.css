@@ -1,10 +1,9 @@
-/* Fagil Manday Library — professional mobile-first design */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+/* T. Nelson Library — professional mobile-first design */
 
 :root{
   --primary:#164e63;
   --primary-strong:#0f3d4d;
-  --accent:#d99a2b;
+  --accent:#8a5a00;
   --accent-soft:#fff3d6;
   --ink:#16232b;
   --muted:#61727b;
@@ -54,7 +53,7 @@ button{cursor:pointer}
 .brand h1{font-family:"Playfair Display",serif;font-size:1.15rem;line-height:1.1}
 .brand span{display:block;color:#d8e8ed;font-size:.75rem;margin-top:.15rem}
 .menu-btn{
-  border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.3);background:#0f3d4d;
   color:#fff;width:44px;height:44px;border-radius:10px;font-size:1.35rem;
 }
 .site-nav{display:none}
@@ -68,6 +67,7 @@ button{cursor:pointer}
 main{width:min(var(--max),calc(100% - 2rem));margin:auto;padding:2rem 0 3rem}
 section{margin:0 0 2.2rem}
 h1,h2,h3{line-height:1.2}
+h1{font-family:"Playfair Display",serif;font-size:clamp(1.9rem,4.5vw,2.8rem)}
 h2{font-family:"Playfair Display",serif;font-size:clamp(1.7rem,4vw,2.45rem)}
 h3{font-size:1.15rem}
 p{color:var(--muted)}
@@ -99,6 +99,7 @@ p{color:var(--muted)}
 }
 .hero-text{position:relative;z-index:1;padding:2rem;color:#fff;max-width:670px}
 .eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:700;color:var(--accent);margin-bottom:.7rem}
+.hero .eyebrow{color:#ffd36a}
 .hero h2{font-size:clamp(2.1rem,6vw,4.1rem);color:#fff}
 .hero p{color:#e8f1f3;margin:1rem 0 1.35rem;max-width:590px;font-size:1.03rem}
 
@@ -229,4 +230,18 @@ dialog::backdrop{background:rgba(7,31,40,.72);backdrop-filter:blur(4px)}
 }
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;transition:none!important}
+}
+
+
+/* Utility classes kept in the external stylesheet for clean HTML and consistent spacing. */
+.mt-1{margin-top:1rem}
+.mt-12{margin-top:1.2rem}
+.ml-05{margin-left:.5rem}
+.brand-title{min-width:0}
+.brand-title h2{font-family:"Playfair Display",serif;font-size:1.15rem;line-height:1.1;color:#fff}
+
+@media (max-width:699px){
+  .submission-row{grid-template-columns:1fr;gap:.2rem}
+  .section-head{align-items:flex-start;flex-direction:column}
+  .ml-05{margin-left:0;margin-top:.5rem}
 }
